@@ -78,4 +78,4 @@ for index, row in df.iterrows():
     weight = 0
 ).add_to(m)
 
-m.save('examples/folium.html')
+m.save('examples/MPLS Mayor 2017.html')
