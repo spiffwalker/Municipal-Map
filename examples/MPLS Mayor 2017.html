@@ -1,0 +1,4420 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_fbfd0aa5c3f44071b173d6dbfd65d1bb {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fbfd0aa5c3f44071b173d6dbfd65d1bb" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_fbfd0aa5c3f44071b173d6dbfd65d1bb = L.map(
+                                  'map_fbfd0aa5c3f44071b173d6dbfd65d1bb',
+                                  {center: [44.976217,-93.26354],
+                                  zoom: 12.3,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_73abf7e7852a467da2a7bbf5e2eeb5d9 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+        
+    
+            var circle_marker_c203f7982bf2400baf2de5417902f2af = L.circleMarker(
+                [45.020526,-93.269473],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_4eefc141bd024b3ba5fd661e95ec3c3b = L.popup({maxWidth: '300'});
+
+            
+                var html_610799ffb4e247bb85a22e4deb259892 = $('<div id="html_610799ffb4e247bb85a22e4deb259892" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-1 P-01</h6>         Jacob Frey            95<br>Tom Hoch              77<br>Nekima Levy-Pounds    69<br>Betsy Hodges          64<br>Raymond Dehn          56</div>')[0];
+                popup_4eefc141bd024b3ba5fd661e95ec3c3b.setContent(html_610799ffb4e247bb85a22e4deb259892);
+            
+
+            circle_marker_c203f7982bf2400baf2de5417902f2af.bindPopup(popup_4eefc141bd024b3ba5fd661e95ec3c3b);
+
+            
+        
+    
+            var circle_marker_f43d25aa5b0648adb022f3193072710b = L.circleMarker(
+                [45.030987,-93.237284],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_1f74f6ee0c1644d5b7270ace66ca10b9 = L.popup({maxWidth: '300'});
+
+            
+                var html_4e7b50c58f274b7b8b6bc9ede40d4433 = $('<div id="html_4e7b50c58f274b7b8b6bc9ede40d4433" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-1 P-02</h6>         Jacob Frey            316<br>Tom Hoch              298<br>Nekima Levy-Pounds    193<br>Raymond Dehn          191<br>Betsy Hodges          186</div>')[0];
+                popup_1f74f6ee0c1644d5b7270ace66ca10b9.setContent(html_4e7b50c58f274b7b8b6bc9ede40d4433);
+            
+
+            circle_marker_f43d25aa5b0648adb022f3193072710b.bindPopup(popup_1f74f6ee0c1644d5b7270ace66ca10b9);
+
+            
+        
+    
+            var circle_marker_f77edc6c3a1f4f8697638a0daea865c8 = L.circleMarker(
+                [45.022229,-93.237205],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 25.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_9ec50a11e73045e4bf95788b22df5e57 = L.popup({maxWidth: '300'});
+
+            
+                var html_785093789d654bfc94bca5a6cd02e28f = $('<div id="html_785093789d654bfc94bca5a6cd02e28f" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-1 P-03</h6>         Jacob Frey            339<br>Tom Hoch              236<br>Raymond Dehn          221<br>Betsy Hodges          211<br>Nekima Levy-Pounds    209</div>')[0];
+                popup_9ec50a11e73045e4bf95788b22df5e57.setContent(html_785093789d654bfc94bca5a6cd02e28f);
+            
+
+            circle_marker_f77edc6c3a1f4f8697638a0daea865c8.bindPopup(popup_9ec50a11e73045e4bf95788b22df5e57);
+
+            
+        
+    
+            var circle_marker_d8b50b5a7c3848e89e868b70deaea82a = L.circleMarker(
+                [45.015955,-93.237156],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_86a2a8959bc748a482793b641c5ed3cf = L.popup({maxWidth: '300'});
+
+            
+                var html_9c28eda6bd9d47babace50c7388eebf2 = $('<div id="html_9c28eda6bd9d47babace50c7388eebf2" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-1 P-04</h6>         Jacob Frey            283<br>Raymond Dehn          250<br>Tom Hoch              205<br>Betsy Hodges          177<br>Nekima Levy-Pounds    162</div>')[0];
+                popup_86a2a8959bc748a482793b641c5ed3cf.setContent(html_9c28eda6bd9d47babace50c7388eebf2);
+            
+
+            circle_marker_d8b50b5a7c3848e89e868b70deaea82a.bindPopup(popup_86a2a8959bc748a482793b641c5ed3cf);
+
+            
+        
+    
+            var circle_marker_15fddddcc8434e81aae11fbe7c69caa2 = L.circleMarker(
+                [45.006107,-93.226845],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_630ddfe4cef5459291a2d8b8c382f172 = L.popup({maxWidth: '300'});
+
+            
+                var html_1dca27f97c534429a9a9d7ed000b9b16 = $('<div id="html_1dca27f97c534429a9a9d7ed000b9b16" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-1 P-05</h6>         Jacob Frey            265<br>Tom Hoch              197<br>Betsy Hodges          160<br>Raymond Dehn          147<br>Nekima Levy-Pounds    135</div>')[0];
+                popup_630ddfe4cef5459291a2d8b8c382f172.setContent(html_1dca27f97c534429a9a9d7ed000b9b16);
+            
+
+            circle_marker_15fddddcc8434e81aae11fbe7c69caa2.bindPopup(popup_630ddfe4cef5459291a2d8b8c382f172);
+
+            
+        
+    
+            var circle_marker_2414ab47077d4515914dc55d31ecb01a = L.circleMarker(
+                [45.005963,-93.242273],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_b2a50650cbed435784e1375b964c1439 = L.popup({maxWidth: '300'});
+
+            
+                var html_ff411bfb9b8e4f148ed1cc227033fba9 = $('<div id="html_ff411bfb9b8e4f148ed1cc227033fba9" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-1 P-06</h6>         Jacob Frey            258<br>Raymond Dehn          203<br>Tom Hoch              199<br>Betsy Hodges          182<br>Nekima Levy-Pounds    147</div>')[0];
+                popup_b2a50650cbed435784e1375b964c1439.setContent(html_ff411bfb9b8e4f148ed1cc227033fba9);
+            
+
+            circle_marker_2414ab47077d4515914dc55d31ecb01a.bindPopup(popup_b2a50650cbed435784e1375b964c1439);
+
+            
+        
+    
+            var circle_marker_375e1ab7823c460cada6217c2181a10f = L.circleMarker(
+                [44.99507,-93.221544],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 21.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_6275f7127783451d8f6fa75e6fbc938f = L.popup({maxWidth: '300'});
+
+            
+                var html_33a79e316cb24415b2e4f38eb44f137d = $('<div id="html_33a79e316cb24415b2e4f38eb44f137d" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-1 P-07</h6>         Raymond Dehn          197<br>Nekima Levy-Pounds    113<br>Jacob Frey            102<br>Betsy Hodges           87<br>Tom Hoch               50</div>')[0];
+                popup_6275f7127783451d8f6fa75e6fbc938f.setContent(html_33a79e316cb24415b2e4f38eb44f137d);
+            
+
+            circle_marker_375e1ab7823c460cada6217c2181a10f.bindPopup(popup_6275f7127783451d8f6fa75e6fbc938f);
+
+            
+        
+    
+            var circle_marker_88f10afdbc0549329b7ecfc0fd8f39fb = L.circleMarker(
+                [45.003075,-93.252506],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_70bcc138334d44c18c4a24b18aa5385b = L.popup({maxWidth: '300'});
+
+            
+                var html_a14758276e37488da5adfb2c1db9b508 = $('<div id="html_a14758276e37488da5adfb2c1db9b508" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-1 P-08</h6>         Raymond Dehn          141<br>Nekima Levy-Pounds    136<br>Jacob Frey            123<br>Tom Hoch              107<br>Betsy Hodges           74</div>')[0];
+                popup_70bcc138334d44c18c4a24b18aa5385b.setContent(html_a14758276e37488da5adfb2c1db9b508);
+            
+
+            circle_marker_88f10afdbc0549329b7ecfc0fd8f39fb.bindPopup(popup_70bcc138334d44c18c4a24b18aa5385b);
+
+            
+        
+    
+            var circle_marker_16881baf4d434c8eb56eb0c315443932 = L.circleMarker(
+                [45.015816,-93.254303],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_588c161d6a1d4eacb72bffd0bc76994e = L.popup({maxWidth: '300'});
+
+            
+                var html_b3f6364b67ff4527b2b944ec93ccdf1f = $('<div id="html_b3f6364b67ff4527b2b944ec93ccdf1f" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-1 P-09</h6>         Raymond Dehn          250<br>Jacob Frey            233<br>Tom Hoch              194<br>Nekima Levy-Pounds    172<br>Betsy Hodges          144</div>')[0];
+                popup_588c161d6a1d4eacb72bffd0bc76994e.setContent(html_b3f6364b67ff4527b2b944ec93ccdf1f);
+            
+
+            circle_marker_16881baf4d434c8eb56eb0c315443932.bindPopup(popup_588c161d6a1d4eacb72bffd0bc76994e);
+
+            
+        
+    
+            var circle_marker_6f3ed0cda25b4988b1242707bd1a2b01 = L.circleMarker(
+                [45.032,-93.26292],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_09131bf6c8e84a929e2b689c06cfb286 = L.popup({maxWidth: '300'});
+
+            
+                var html_eb5b24d8136642f4b59c434069a041ba = $('<div id="html_eb5b24d8136642f4b59c434069a041ba" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-1 P-10</h6>         Jacob Frey            127<br>Tom Hoch               80<br>Betsy Hodges           65<br>Raymond Dehn           59<br>Nekima Levy-Pounds     59</div>')[0];
+                popup_09131bf6c8e84a929e2b689c06cfb286.setContent(html_eb5b24d8136642f4b59c434069a041ba);
+            
+
+            circle_marker_6f3ed0cda25b4988b1242707bd1a2b01.bindPopup(popup_09131bf6c8e84a929e2b689c06cfb286);
+
+            
+        
+    
+            var circle_marker_308a34d2e9d74ec5a20c5756283364a7 = L.circleMarker(
+                [44.950149,-93.227051],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_97a58e7b32a8477fa53d847ebef271e0 = L.popup({maxWidth: '300'});
+
+            
+                var html_ad888dd098e649a6a4d871d69f94fbf5 = $('<div id="html_ad888dd098e649a6a4d871d69f94fbf5" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-2 P-01</h6>         Raymond Dehn          168<br>Betsy Hodges          142<br>Nekima Levy-Pounds    131<br>Jacob Frey            104<br>Tom Hoch               77</div>')[0];
+                popup_97a58e7b32a8477fa53d847ebef271e0.setContent(html_ad888dd098e649a6a4d871d69f94fbf5);
+            
+
+            circle_marker_308a34d2e9d74ec5a20c5756283364a7.bindPopup(popup_97a58e7b32a8477fa53d847ebef271e0);
+
+            
+        
+    
+            var circle_marker_afa594b282fe4c2f850803b40e2c502f = L.circleMarker(
+                [44.956405,-93.228328],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_c1c6cb8c73524c218d0cfcf131ff0049 = L.popup({maxWidth: '300'});
+
+            
+                var html_5246ec5e7d664f81be18bcf2eb7560d9 = $('<div id="html_5246ec5e7d664f81be18bcf2eb7560d9" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-2 P-02</h6>         Raymond Dehn          209<br>Betsy Hodges          181<br>Nekima Levy-Pounds    149<br>Jacob Frey            131<br>Tom Hoch              104</div>')[0];
+                popup_c1c6cb8c73524c218d0cfcf131ff0049.setContent(html_5246ec5e7d664f81be18bcf2eb7560d9);
+            
+
+            circle_marker_afa594b282fe4c2f850803b40e2c502f.bindPopup(popup_c1c6cb8c73524c218d0cfcf131ff0049);
+
+            
+        
+    
+            var circle_marker_a1462d5c5a264dbdb2d6777f019ed6af = L.circleMarker(
+                [44.984224,-93.218565],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 23.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_42fe002363524e44b23d6b2e642069e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_6470cae1f4194b248f8dc6ec0881226f = $('<div id="html_6470cae1f4194b248f8dc6ec0881226f" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-2 P-03</h6>         Raymond Dehn          197<br>Nekima Levy-Pounds    103<br>Jacob Frey             90<br>Betsy Hodges           81<br>Tom Hoch               67</div>')[0];
+                popup_42fe002363524e44b23d6b2e642069e9.setContent(html_6470cae1f4194b248f8dc6ec0881226f);
+            
+
+            circle_marker_a1462d5c5a264dbdb2d6777f019ed6af.bindPopup(popup_42fe002363524e44b23d6b2e642069e9);
+
+            
+        
+    
+            var circle_marker_92c98dad261548469f17195aaed4784a = L.circleMarker(
+                [44.976302,-93.234031],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_f5c76602eb48441395618da579bd4c0d = L.popup({maxWidth: '300'});
+
+            
+                var html_d2615298e32744bbaf25c9a70a115570 = $('<div id="html_d2615298e32744bbaf25c9a70a115570" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-2 P-04</h6>         Raymond Dehn          125<br>Nekima Levy-Pounds     55<br>Jacob Frey             41<br>Betsy Hodges           24<br>Tom Hoch               16</div>')[0];
+                popup_f5c76602eb48441395618da579bd4c0d.setContent(html_d2615298e32744bbaf25c9a70a115570);
+            
+
+            circle_marker_92c98dad261548469f17195aaed4784a.bindPopup(popup_f5c76602eb48441395618da579bd4c0d);
+
+            
+        
+    
+            var circle_marker_f8365f12587c4907ae9feef5d843d24f = L.circleMarker(
+                [44.970976,-93.215247],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_9bc7f57bef7d4d84b64615f14d440516 = L.popup({maxWidth: '300'});
+
+            
+                var html_5a98846e75864c0a8cf604b1115047b4 = $('<div id="html_5a98846e75864c0a8cf604b1115047b4" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-2 P-05</h6>         Raymond Dehn          207<br>Tom Hoch              145<br>Jacob Frey            130<br>Betsy Hodges          124<br>Nekima Levy-Pounds    112</div>')[0];
+                popup_9bc7f57bef7d4d84b64615f14d440516.setContent(html_5a98846e75864c0a8cf604b1115047b4);
+            
+
+            circle_marker_f8365f12587c4907ae9feef5d843d24f.bindPopup(popup_9bc7f57bef7d4d84b64615f14d440516);
+
+            
+        
+    
+            var circle_marker_5daf90a48a464fe5a9ba09b8a8ff767f = L.circleMarker(
+                [44.961591,-93.214282],
+                {
+  "bubblingMouseEvents": true,
+  "color": "limegreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "limegreen",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_17fbbc7be4ed464f92860aa6c0e00480 = L.popup({maxWidth: '300'});
+
+            
+                var html_f47135890523439c9e970814eb9d33f6 = $('<div id="html_f47135890523439c9e970814eb9d33f6" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-2 P-06</h6>         Betsy Hodges          125<br>Raymond Dehn          119<br>Tom Hoch              110<br>Jacob Frey            107<br>Nekima Levy-Pounds     78</div>')[0];
+                popup_17fbbc7be4ed464f92860aa6c0e00480.setContent(html_f47135890523439c9e970814eb9d33f6);
+            
+
+            circle_marker_5daf90a48a464fe5a9ba09b8a8ff767f.bindPopup(popup_17fbbc7be4ed464f92860aa6c0e00480);
+
+            
+        
+    
+            var circle_marker_0417e14404ee425797cb016a1d10ebdc = L.circleMarker(
+                [44.973076,-93.242704],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_4b2e6dbd30c74419bb20f6d8a7a28cf7 = L.popup({maxWidth: '300'});
+
+            
+                var html_24897b7245b041fc87b9af3572709903 = $('<div id="html_24897b7245b041fc87b9af3572709903" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-2 P-07</h6>         Raymond Dehn          101<br>Nekima Levy-Pounds     46<br>Jacob Frey             38<br>Betsy Hodges           37<br>Tom Hoch               29</div>')[0];
+                popup_4b2e6dbd30c74419bb20f6d8a7a28cf7.setContent(html_24897b7245b041fc87b9af3572709903);
+            
+
+            circle_marker_0417e14404ee425797cb016a1d10ebdc.bindPopup(popup_4b2e6dbd30c74419bb20f6d8a7a28cf7);
+
+            
+        
+    
+            var circle_marker_2d301facf4df4ef6a83817cc168474e6 = L.circleMarker(
+                [44.946834,-93.21135],
+                {
+  "bubblingMouseEvents": true,
+  "color": "limegreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "limegreen",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_abf72274e8984b5aa08a170e1dcbcd5e = L.popup({maxWidth: '300'});
+
+            
+                var html_77d845804ee04e84b85f3dafc172b7c7 = $('<div id="html_77d845804ee04e84b85f3dafc172b7c7" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-2 P-08</h6>         Betsy Hodges          301<br>Jacob Frey            301<br>Tom Hoch              275<br>Raymond Dehn          268<br>Nekima Levy-Pounds    251</div>')[0];
+                popup_abf72274e8984b5aa08a170e1dcbcd5e.setContent(html_77d845804ee04e84b85f3dafc172b7c7);
+            
+
+            circle_marker_2d301facf4df4ef6a83817cc168474e6.bindPopup(popup_abf72274e8984b5aa08a170e1dcbcd5e);
+
+            
+        
+    
+            var circle_marker_d6c9e8e6561045c98d0a7de997e32dd5 = L.circleMarker(
+                [44.965464,-93.229795],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_6dbf4d42c5924ac2a181ca160973dd9d = L.popup({maxWidth: '300'});
+
+            
+                var html_2e9bf15b062e4fdb8e2a07d6c9f0eecf = $('<div id="html_2e9bf15b062e4fdb8e2a07d6c9f0eecf" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-2 P-09</h6>         Raymond Dehn          173<br>Jacob Frey             94<br>Nekima Levy-Pounds     90<br>Betsy Hodges           74<br>Tom Hoch               62</div>')[0];
+                popup_6dbf4d42c5924ac2a181ca160973dd9d.setContent(html_2e9bf15b062e4fdb8e2a07d6c9f0eecf);
+            
+
+            circle_marker_d6c9e8e6561045c98d0a7de997e32dd5.bindPopup(popup_6dbf4d42c5924ac2a181ca160973dd9d);
+
+            
+        
+    
+            var circle_marker_7831e1bbf250406196231555f86ea2ad = L.circleMarker(
+                [44.970364,-93.226338],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_8e51629b5c244dd78ad39e7955e162ae = L.popup({maxWidth: '300'});
+
+            
+                var html_a0e70c72af84407cb433e3c32a278cae = $('<div id="html_a0e70c72af84407cb433e3c32a278cae" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-2 P-10</h6>         Raymond Dehn          134<br>Betsy Hodges           79<br>Jacob Frey             65<br>Nekima Levy-Pounds     62<br>Tom Hoch               18</div>')[0];
+                popup_8e51629b5c244dd78ad39e7955e162ae.setContent(html_a0e70c72af84407cb433e3c32a278cae);
+            
+
+            circle_marker_7831e1bbf250406196231555f86ea2ad.bindPopup(popup_8e51629b5c244dd78ad39e7955e162ae);
+
+            
+        
+    
+            var circle_marker_426ce734d8f24cda8698db7d3bfcecea = L.circleMarker(
+                [44.944094,-93.225683],
+                {
+  "bubblingMouseEvents": true,
+  "color": "limegreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "limegreen",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_2cffdaac001048f0bee86e1d53bcd42a = L.popup({maxWidth: '300'});
+
+            
+                var html_64ce6ae59f6d463c9030f73ccc3be0f9 = $('<div id="html_64ce6ae59f6d463c9030f73ccc3be0f9" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-2 P-11</h6>         Betsy Hodges          167<br>Raymond Dehn          165<br>Nekima Levy-Pounds    139<br>Jacob Frey            125<br>Tom Hoch              102</div>')[0];
+                popup_2cffdaac001048f0bee86e1d53bcd42a.setContent(html_64ce6ae59f6d463c9030f73ccc3be0f9);
+            
+
+            circle_marker_426ce734d8f24cda8698db7d3bfcecea.bindPopup(popup_2cffdaac001048f0bee86e1d53bcd42a);
+
+            
+        
+    
+            var circle_marker_88b700ae4bf243878082223cb528ae00 = L.circleMarker(
+                [44.983557,-93.236982],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 44.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_61e820fc5d3c4d1ead7c510d6e89fffc = L.popup({maxWidth: '300'});
+
+            
+                var html_7b82bbe83d51490d86c3c26009a8478b = $('<div id="html_7b82bbe83d51490d86c3c26009a8478b" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-3 P-01</h6>         Raymond Dehn          287<br>Jacob Frey            111<br>Betsy Hodges           73<br>Nekima Levy-Pounds     65<br>Tom Hoch               32</div>')[0];
+                popup_61e820fc5d3c4d1ead7c510d6e89fffc.setContent(html_7b82bbe83d51490d86c3c26009a8478b);
+            
+
+            circle_marker_88b700ae4bf243878082223cb528ae00.bindPopup(popup_61e820fc5d3c4d1ead7c510d6e89fffc);
+
+            
+        
+    
+            var circle_marker_e1e67b878d3e435fa3a5d111951d1e56 = L.circleMarker(
+                [44.985353,-93.244662],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_6fdf87d18c374efe95e8c571650bab67 = L.popup({maxWidth: '300'});
+
+            
+                var html_25d822e8e0324a7c84de8e5fac44df3c = $('<div id="html_25d822e8e0324a7c84de8e5fac44df3c" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-3 P-02</h6>         Raymond Dehn          302<br>Jacob Frey            242<br>Nekima Levy-Pounds    146<br>Tom Hoch              124<br>Betsy Hodges          117</div>')[0];
+                popup_6fdf87d18c374efe95e8c571650bab67.setContent(html_25d822e8e0324a7c84de8e5fac44df3c);
+            
+
+            circle_marker_e1e67b878d3e435fa3a5d111951d1e56.bindPopup(popup_6fdf87d18c374efe95e8c571650bab67);
+
+            
+        
+    
+            var circle_marker_9414373a095d46c597136fb811f40fac = L.circleMarker(
+                [44.986807,-93.254822],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 46.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_56f9b3add9c64eb2bcc2a0d49230841e = L.popup({maxWidth: '300'});
+
+            
+                var html_4e2b3feb34d44e779b717af39abb92c9 = $('<div id="html_4e2b3feb34d44e779b717af39abb92c9" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-3 P-03</h6>         Jacob Frey            537<br>Tom Hoch              352<br>Raymond Dehn          238<br>Betsy Hodges          164<br>Nekima Levy-Pounds    147</div>')[0];
+                popup_56f9b3add9c64eb2bcc2a0d49230841e.setContent(html_4e2b3feb34d44e779b717af39abb92c9);
+            
+
+            circle_marker_9414373a095d46c597136fb811f40fac.bindPopup(popup_56f9b3add9c64eb2bcc2a0d49230841e);
+
+            
+        
+    
+            var circle_marker_57a5869efc1645428de13cbe490c0458 = L.circleMarker(
+                [44.994432,-93.252974],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_5ef96254ed55440dbc76135d830caaf7 = L.popup({maxWidth: '300'});
+
+            
+                var html_56779c834d67407294dc01a77abb76f2 = $('<div id="html_56779c834d67407294dc01a77abb76f2" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-3 P-04</h6>         Jacob Frey            153<br>Tom Hoch              131<br>Raymond Dehn          105<br>Betsy Hodges           64<br>Nekima Levy-Pounds     60</div>')[0];
+                popup_5ef96254ed55440dbc76135d830caaf7.setContent(html_56779c834d67407294dc01a77abb76f2);
+            
+
+            circle_marker_57a5869efc1645428de13cbe490c0458.bindPopup(popup_5ef96254ed55440dbc76135d830caaf7);
+
+            
+        
+    
+            var circle_marker_7cce488ad87f48fbadad6b46445b4fa6 = L.circleMarker(
+                [44.994926,-93.264468],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_fb6fe253f9fe4b6b96579517bc13c6ee = L.popup({maxWidth: '300'});
+
+            
+                var html_7d0c4d4d9fff44e8874c5f4f487ee09a = $('<div id="html_7d0c4d4d9fff44e8874c5f4f487ee09a" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-3 P-05</h6>         Jacob Frey            235<br>Tom Hoch              166<br>Raymond Dehn          143<br>Nekima Levy-Pounds    132<br>Betsy Hodges          100</div>')[0];
+                popup_fb6fe253f9fe4b6b96579517bc13c6ee.setContent(html_7d0c4d4d9fff44e8874c5f4f487ee09a);
+            
+
+            circle_marker_7cce488ad87f48fbadad6b46445b4fa6.bindPopup(popup_fb6fe253f9fe4b6b96579517bc13c6ee);
+
+            
+        
+    
+            var circle_marker_f882f03df001426b8fe18d5121cf5ad2 = L.circleMarker(
+                [45.005126,-93.267518],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_f9a592c456ff40ecaf42905a41048aca = L.popup({maxWidth: '300'});
+
+            
+                var html_8907bb59dcf84713a6e12dd7c2480297 = $('<div id="html_8907bb59dcf84713a6e12dd7c2480297" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-3 P-06</h6>         Jacob Frey            311<br>Raymond Dehn          308<br>Nekima Levy-Pounds    253<br>Betsy Hodges          204<br>Tom Hoch              196</div>')[0];
+                popup_f9a592c456ff40ecaf42905a41048aca.setContent(html_8907bb59dcf84713a6e12dd7c2480297);
+            
+
+            circle_marker_f882f03df001426b8fe18d5121cf5ad2.bindPopup(popup_f9a592c456ff40ecaf42905a41048aca);
+
+            
+        
+    
+            var circle_marker_49ebac9180164522a252092e92017b0f = L.circleMarker(
+                [44.989085,-93.271472],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_4fe3611602714824bb948cf502ed9ea6 = L.popup({maxWidth: '300'});
+
+            
+                var html_80f87ecc43344e4d80bdf6ea40551dc3 = $('<div id="html_80f87ecc43344e4d80bdf6ea40551dc3" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-3 P-07</h6>         Jacob Frey            335<br>Tom Hoch              266<br>Betsy Hodges          130<br>Raymond Dehn           93<br>Nekima Levy-Pounds     89</div>')[0];
+                popup_4fe3611602714824bb948cf502ed9ea6.setContent(html_80f87ecc43344e4d80bdf6ea40551dc3);
+            
+
+            circle_marker_49ebac9180164522a252092e92017b0f.bindPopup(popup_4fe3611602714824bb948cf502ed9ea6);
+
+            
+        
+    
+            var circle_marker_046904d8fae04d939cfdc1076af30d7c = L.circleMarker(
+                [44.983903,-93.266608],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_29f7c84dacef4ec79295d0023b2e9071 = L.popup({maxWidth: '300'});
+
+            
+                var html_f3634fe143004edea850f553869abe06 = $('<div id="html_f3634fe143004edea850f553869abe06" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-3 P-08</h6>         Jacob Frey            282<br>Tom Hoch              204<br>Betsy Hodges           93<br>Raymond Dehn           63<br>Nekima Levy-Pounds     35</div>')[0];
+                popup_29f7c84dacef4ec79295d0023b2e9071.setContent(html_f3634fe143004edea850f553869abe06);
+            
+
+            circle_marker_046904d8fae04d939cfdc1076af30d7c.bindPopup(popup_29f7c84dacef4ec79295d0023b2e9071);
+
+            
+        
+    
+            var circle_marker_f406b6fcb1a342e1bc5c6af97d70db72 = L.circleMarker(
+                [44.976209,-93.255679],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 14.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_b5b917cf071544f4880f501f7dcb5702 = L.popup({maxWidth: '300'});
+
+            
+                var html_61471e0ff07a4fe5b0c16d0502090326 = $('<div id="html_61471e0ff07a4fe5b0c16d0502090326" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-3 P-09</h6>         Jacob Frey            386<br>Tom Hoch              327<br>Betsy Hodges          119<br>Raymond Dehn           86<br>Nekima Levy-Pounds     46</div>')[0];
+                popup_b5b917cf071544f4880f501f7dcb5702.setContent(html_61471e0ff07a4fe5b0c16d0502090326);
+            
+
+            circle_marker_f406b6fcb1a342e1bc5c6af97d70db72.bindPopup(popup_b5b917cf071544f4880f501f7dcb5702);
+
+            
+        
+    
+            var circle_marker_5a09e3010a2a4b7d8cc0b4c84676913f = L.circleMarker(
+                [44.994874,-93.242454],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_a7542567267f4fcdabc90f06dba935fb = L.popup({maxWidth: '300'});
+
+            
+                var html_2fa3113511524863bc43c6d8f1202674 = $('<div id="html_2fa3113511524863bc43c6d8f1202674" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-3 P-10</h6>         Raymond Dehn          106<br>Jacob Frey            104<br>Nekima Levy-Pounds     76<br>Tom Hoch               52<br>Betsy Hodges           51</div>')[0];
+                popup_a7542567267f4fcdabc90f06dba935fb.setContent(html_2fa3113511524863bc43c6d8f1202674);
+            
+
+            circle_marker_5a09e3010a2a4b7d8cc0b4c84676913f.bindPopup(popup_a7542567267f4fcdabc90f06dba935fb);
+
+            
+        
+    
+            var circle_marker_55a318c4d1314159b13a7b808a8669db = L.circleMarker(
+                [44.98681,-93.278005],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 22.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_e8e4e689798c4302b8504e73b9534a14 = L.popup({maxWidth: '300'});
+
+            
+                var html_a752107387d74539872adcb48f62b4eb = $('<div id="html_a752107387d74539872adcb48f62b4eb" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-3 P-11</h6>         Jacob Frey            261<br>Tom Hoch              172<br>Betsy Hodges           60<br>Raymond Dehn           42<br>Nekima Levy-Pounds     36</div>')[0];
+                popup_e8e4e689798c4302b8504e73b9534a14.setContent(html_a752107387d74539872adcb48f62b4eb);
+            
+
+            circle_marker_55a318c4d1314159b13a7b808a8669db.bindPopup(popup_e8e4e689798c4302b8504e73b9534a14);
+
+            
+        
+    
+            var circle_marker_4cec2365d88745f18077ce4c127a6846 = L.circleMarker(
+                [44.981036,-93.272567],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_7d5c62c8887d4ea5a2488fd5d3dc7a16 = L.popup({maxWidth: '300'});
+
+            
+                var html_000cb6b8c4424197b45a55845e83c485 = $('<div id="html_000cb6b8c4424197b45a55845e83c485" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-3 P-12</h6>         Jacob Frey            109<br>Tom Hoch               90<br>Betsy Hodges           36<br>Raymond Dehn           35<br>Nekima Levy-Pounds     33</div>')[0];
+                popup_7d5c62c8887d4ea5a2488fd5d3dc7a16.setContent(html_000cb6b8c4424197b45a55845e83c485);
+            
+
+            circle_marker_4cec2365d88745f18077ce4c127a6846.bindPopup(popup_7d5c62c8887d4ea5a2488fd5d3dc7a16);
+
+            
+        
+    
+            var circle_marker_54a5c3091c174d4bbba7495e123bd39f = L.circleMarker(
+                [45.047631,-93.310572],
+                {
+  "bubblingMouseEvents": true,
+  "color": "m",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "m",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_a91a55bfe2504fa8b38eb260052abd2a = L.popup({maxWidth: '300'});
+
+            
+                var html_8875bb3891f24f97ab65cdf489797cae = $('<div id="html_8875bb3891f24f97ab65cdf489797cae" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-4 P-01</h6>         Tom Hoch              111<br>Nekima Levy-Pounds    111<br>Jacob Frey             99<br>Betsy Hodges           79<br>Raymond Dehn           60</div>')[0];
+                popup_a91a55bfe2504fa8b38eb260052abd2a.setContent(html_8875bb3891f24f97ab65cdf489797cae);
+            
+
+            circle_marker_54a5c3091c174d4bbba7495e123bd39f.bindPopup(popup_a91a55bfe2504fa8b38eb260052abd2a);
+
+            
+        
+    
+            var circle_marker_71de536c98734427b51a7dfe5b1af379 = L.circleMarker(
+                [45.042116,-93.291464],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_79ec2a19098d420ca90d2e0917f2961e = L.popup({maxWidth: '300'});
+
+            
+                var html_f53c949882aa4eae8ba27c940cce11a6 = $('<div id="html_f53c949882aa4eae8ba27c940cce11a6" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-4 P-02</h6>         Nekima Levy-Pounds    158<br>Jacob Frey            132<br>Betsy Hodges          122<br>Tom Hoch              120<br>Raymond Dehn           52</div>')[0];
+                popup_79ec2a19098d420ca90d2e0917f2961e.setContent(html_f53c949882aa4eae8ba27c940cce11a6);
+            
+
+            circle_marker_71de536c98734427b51a7dfe5b1af379.bindPopup(popup_79ec2a19098d420ca90d2e0917f2961e);
+
+            
+        
+    
+            var circle_marker_60ab2ecab53149b78133fb8427f28e34 = L.circleMarker(
+                [45.018512,-93.285889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_b83d0a9328464097ad341875cf4b1b96 = L.popup({maxWidth: '300'});
+
+            
+                var html_c600ecb8d05444b1ae6d75967e1bcc31 = $('<div id="html_c600ecb8d05444b1ae6d75967e1bcc31" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-4 P-03</h6>         Nekima Levy-Pounds    80<br>Jacob Frey            69<br>Betsy Hodges          66<br>Tom Hoch              49<br>Raymond Dehn          44</div>')[0];
+                popup_b83d0a9328464097ad341875cf4b1b96.setContent(html_c600ecb8d05444b1ae6d75967e1bcc31);
+            
+
+            circle_marker_60ab2ecab53149b78133fb8427f28e34.bindPopup(popup_b83d0a9328464097ad341875cf4b1b96);
+
+            
+        
+    
+            var circle_marker_752ac8d597ea4130ab0226ee47a95315 = L.circleMarker(
+                [45.038416,-93.308521],
+                {
+  "bubblingMouseEvents": true,
+  "color": "m",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "m",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_b3c89783ef404272832173c8b6b2a89c = L.popup({maxWidth: '300'});
+
+            
+                var html_140ddc84125044c499220d2836132b52 = $('<div id="html_140ddc84125044c499220d2836132b52" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-4 P-04</h6>         Tom Hoch              239<br>Jacob Frey            201<br>Raymond Dehn          171<br>Nekima Levy-Pounds    155<br>Betsy Hodges          121</div>')[0];
+                popup_b3c89783ef404272832173c8b6b2a89c.setContent(html_140ddc84125044c499220d2836132b52);
+            
+
+            circle_marker_752ac8d597ea4130ab0226ee47a95315.bindPopup(popup_b3c89783ef404272832173c8b6b2a89c);
+
+            
+        
+    
+            var circle_marker_b56ae8d5f5c547e0a35f83ea64ac6f25 = L.circleMarker(
+                [45.018583,-93.300667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_9acd0ee5ce114363991aa2ecfabf50c1 = L.popup({maxWidth: '300'});
+
+            
+                var html_ca0726b300d248f8ab48b64e86550896 = $('<div id="html_ca0726b300d248f8ab48b64e86550896" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-4 P-05</h6>         Nekima Levy-Pounds    196<br>Tom Hoch              152<br>Jacob Frey            114<br>Betsy Hodges          104<br>Raymond Dehn           93</div>')[0];
+                popup_9acd0ee5ce114363991aa2ecfabf50c1.setContent(html_ca0726b300d248f8ab48b64e86550896);
+            
+
+            circle_marker_b56ae8d5f5c547e0a35f83ea64ac6f25.bindPopup(popup_9acd0ee5ce114363991aa2ecfabf50c1);
+
+            
+        
+    
+            var circle_marker_d256d3b8cc674ab89e2edfaca51695be = L.circleMarker(
+                [45.029435,-93.290701],
+                {
+  "bubblingMouseEvents": true,
+  "color": "m",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "m",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_9833998f4e474f359af9f55ef8109cb8 = L.popup({maxWidth: '300'});
+
+            
+                var html_bcfa14ae135a45278861d098e1382159 = $('<div id="html_bcfa14ae135a45278861d098e1382159" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-4 P-06</h6>         Tom Hoch              129<br>Jacob Frey            105<br>Nekima Levy-Pounds     98<br>Betsy Hodges           77<br>Raymond Dehn           65</div>')[0];
+                popup_9833998f4e474f359af9f55ef8109cb8.setContent(html_bcfa14ae135a45278861d098e1382159);
+            
+
+            circle_marker_d256d3b8cc674ab89e2edfaca51695be.bindPopup(popup_9833998f4e474f359af9f55ef8109cb8);
+
+            
+        
+    
+            var circle_marker_42f0982c19934306affc9ad23f8a3e74 = L.circleMarker(
+                [45.026925,-93.309692],
+                {
+  "bubblingMouseEvents": true,
+  "color": "m",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "m",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_ff1dbf584fb74daebf4d18e7670356e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_be5e58437391400f96327be160cb2ec8 = $('<div id="html_be5e58437391400f96327be160cb2ec8" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-4 P-07</h6>         Tom Hoch              193<br>Jacob Frey            162<br>Nekima Levy-Pounds    150<br>Raymond Dehn          115<br>Betsy Hodges           81</div>')[0];
+                popup_ff1dbf584fb74daebf4d18e7670356e9.setContent(html_be5e58437391400f96327be160cb2ec8);
+            
+
+            circle_marker_42f0982c19934306affc9ad23f8a3e74.bindPopup(popup_ff1dbf584fb74daebf4d18e7670356e9);
+
+            
+        
+    
+            var circle_marker_2b2d04ce26da426cbde9d9c3f2b96386 = L.circleMarker(
+                [45.015054,-93.313306],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_4605231640e543069d9813e982b615ac = L.popup({maxWidth: '300'});
+
+            
+                var html_cfecfed3273649d2930c9edc960df1e8 = $('<div id="html_cfecfed3273649d2930c9edc960df1e8" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-4 P-08</h6>         Nekima Levy-Pounds    152<br>Jacob Frey            151<br>Betsy Hodges          125<br>Raymond Dehn          109<br>Tom Hoch              106</div>')[0];
+                popup_4605231640e543069d9813e982b615ac.setContent(html_cfecfed3273649d2930c9edc960df1e8);
+            
+
+            circle_marker_2b2d04ce26da426cbde9d9c3f2b96386.bindPopup(popup_4605231640e543069d9813e982b615ac);
+
+            
+        
+    
+            var circle_marker_efb62f5bee624c659609a0fd7271b902 = L.circleMarker(
+                [44.999773,-93.313342],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 27.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_558b20eb567d408cb4402e4aa8eab2ec = L.popup({maxWidth: '300'});
+
+            
+                var html_d1d9de5bee214a24ab06fa1c19ecfdee = $('<div id="html_d1d9de5bee214a24ab06fa1c19ecfdee" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-5 P-01</h6>         Nekima Levy-Pounds    220<br>Betsy Hodges          111<br>Raymond Dehn          107<br>Jacob Frey             87<br>Tom Hoch               70</div>')[0];
+                popup_558b20eb567d408cb4402e4aa8eab2ec.setContent(html_d1d9de5bee214a24ab06fa1c19ecfdee);
+            
+
+            circle_marker_efb62f5bee624c659609a0fd7271b902.bindPopup(popup_558b20eb567d408cb4402e4aa8eab2ec);
+
+            
+        
+    
+            var circle_marker_f8eb14040bb14ece9d33366a2d28e060 = L.circleMarker(
+                [45.007781,-93.30061],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_176e92a658714756bcebb7059b41a616 = L.popup({maxWidth: '300'});
+
+            
+                var html_d7f3153f650445978046c01915ed74ab = $('<div id="html_d7f3153f650445978046c01915ed74ab" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-5 P-02</h6>         Nekima Levy-Pounds    136<br>Tom Hoch               76<br>Jacob Frey             74<br>Betsy Hodges           72<br>Raymond Dehn           50</div>')[0];
+                popup_176e92a658714756bcebb7059b41a616.setContent(html_d7f3153f650445978046c01915ed74ab);
+            
+
+            circle_marker_f8eb14040bb14ece9d33366a2d28e060.bindPopup(popup_176e92a658714756bcebb7059b41a616);
+
+            
+        
+    
+            var circle_marker_68f047f5420e4675af724d896ef4e2e0 = L.circleMarker(
+                [44.997426,-93.304468],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 18.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_52e785b4ce574ff889dbfabcfdce2ac2 = L.popup({maxWidth: '300'});
+
+            
+                var html_76c51df69b4b4eef8d723256e27d9830 = $('<div id="html_76c51df69b4b4eef8d723256e27d9830" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-5 P-03</h6>         Nekima Levy-Pounds    143<br>Betsy Hodges           70<br>Raymond Dehn           62<br>Tom Hoch               49<br>Jacob Frey             49</div>')[0];
+                popup_52e785b4ce574ff889dbfabcfdce2ac2.setContent(html_76c51df69b4b4eef8d723256e27d9830);
+            
+
+            circle_marker_68f047f5420e4675af724d896ef4e2e0.bindPopup(popup_52e785b4ce574ff889dbfabcfdce2ac2);
+
+            
+        
+    
+            var circle_marker_f5f81ac65cde4eb3a55d07eb66f1ddf1 = L.circleMarker(
+                [44.989354,-93.313364],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_84c5a67090cb40c9af319fc389c213e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_6f244d9d6cbd44b79ebbb65d861baa6a = $('<div id="html_6f244d9d6cbd44b79ebbb65d861baa6a" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-5 P-04</h6>         Nekima Levy-Pounds    137<br>Raymond Dehn           98<br>Tom Hoch               87<br>Betsy Hodges           78<br>Jacob Frey             61</div>')[0];
+                popup_84c5a67090cb40c9af319fc389c213e1.setContent(html_6f244d9d6cbd44b79ebbb65d861baa6a);
+            
+
+            circle_marker_f5f81ac65cde4eb3a55d07eb66f1ddf1.bindPopup(popup_84c5a67090cb40c9af319fc389c213e1);
+
+            
+        
+    
+            var circle_marker_63255a8da8fe4b38b2884fb475247042 = L.circleMarker(
+                [44.994924,-93.287983],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_dc39d2e4202a4c94b12d173a28b6ed05 = L.popup({maxWidth: '300'});
+
+            
+                var html_2d13b2ff2de44ebf8a7ac42e8c3cd0dc = $('<div id="html_2d13b2ff2de44ebf8a7ac42e8c3cd0dc" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-5 P-05</h6>         Nekima Levy-Pounds    163<br>Betsy Hodges           94<br>Tom Hoch               88<br>Jacob Frey             80<br>Raymond Dehn           52</div>')[0];
+                popup_dc39d2e4202a4c94b12d173a28b6ed05.setContent(html_2d13b2ff2de44ebf8a7ac42e8c3cd0dc);
+            
+
+            circle_marker_63255a8da8fe4b38b2884fb475247042.bindPopup(popup_dc39d2e4202a4c94b12d173a28b6ed05);
+
+            
+        
+    
+            var circle_marker_321225cd3f884fd4967b1c9be955a21d = L.circleMarker(
+                [44.980768,-93.289622],
+                {
+  "bubblingMouseEvents": true,
+  "color": "limegreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "limegreen",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_3736731be4384119967fbed6d57945f7 = L.popup({maxWidth: '300'});
+
+            
+                var html_88dd43b323b847f59aa1a84fb8662f3f = $('<div id="html_88dd43b323b847f59aa1a84fb8662f3f" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-5 P-06C</h6>         Betsy Hodges          53<br>Tom Hoch              46<br>Jacob Frey            32<br>Raymond Dehn          30<br>Nekima Levy-Pounds    24</div>')[0];
+                popup_3736731be4384119967fbed6d57945f7.setContent(html_88dd43b323b847f59aa1a84fb8662f3f);
+            
+
+            circle_marker_321225cd3f884fd4967b1c9be955a21d.bindPopup(popup_3736731be4384119967fbed6d57945f7);
+
+            
+        
+    
+            var circle_marker_e19c19c46088426e9962ca18b135b638 = L.circleMarker(
+                [44.987784,-93.294334],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_4fca217e64644fd6800dbef4c05361be = L.popup({maxWidth: '300'});
+
+            
+                var html_5d0d59b2450742eca4e3b765f09705e8 = $('<div id="html_5d0d59b2450742eca4e3b765f09705e8" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-5 P-07</h6>         Nekima Levy-Pounds    119<br>Betsy Hodges           75<br>Jacob Frey             60<br>Tom Hoch               43<br>Raymond Dehn           37</div>')[0];
+                popup_4fca217e64644fd6800dbef4c05361be.setContent(html_5d0d59b2450742eca4e3b765f09705e8);
+            
+
+            circle_marker_e19c19c46088426e9962ca18b135b638.bindPopup(popup_4fca217e64644fd6800dbef4c05361be);
+
+            
+        
+    
+            var circle_marker_8221dd93bb05447486014b68462d58ab = L.circleMarker(
+                [45.006068,-93.285206],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_19799323defb4662a7c341daf5d1eaf2 = L.popup({maxWidth: '300'});
+
+            
+                var html_ae3737857e2148adb927aeb4717b7fe5 = $('<div id="html_ae3737857e2148adb927aeb4717b7fe5" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-5 P-08</h6>         Nekima Levy-Pounds    136<br>Jacob Frey             93<br>Betsy Hodges           68<br>Tom Hoch               55<br>Raymond Dehn           43</div>')[0];
+                popup_19799323defb4662a7c341daf5d1eaf2.setContent(html_ae3737857e2148adb927aeb4717b7fe5);
+            
+
+            circle_marker_8221dd93bb05447486014b68462d58ab.bindPopup(popup_19799323defb4662a7c341daf5d1eaf2);
+
+            
+        
+    
+            var circle_marker_f05f1380956e446b8d4b265e678563c4 = L.circleMarker(
+                [44.980771,-93.305802],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_5f6586fe09784d8a8be579e7ff3bd7c1 = L.popup({maxWidth: '300'});
+
+            
+                var html_ebff653f265c43f5aeaa8a5625408890 = $('<div id="html_ebff653f265c43f5aeaa8a5625408890" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-5 P-09</h6>         Raymond Dehn          122<br>Nekima Levy-Pounds    119<br>Betsy Hodges           79<br>Jacob Frey             75<br>Tom Hoch               55</div>')[0];
+                popup_5f6586fe09784d8a8be579e7ff3bd7c1.setContent(html_ebff653f265c43f5aeaa8a5625408890);
+            
+
+            circle_marker_f05f1380956e446b8d4b265e678563c4.bindPopup(popup_5f6586fe09784d8a8be579e7ff3bd7c1);
+
+            
+        
+    
+            var circle_marker_89f05f5cb30e40b3bf164518ed752e80 = L.circleMarker(
+                [44.960958,-93.240905],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_f5b2d49549bb438582662ef76ca2ff78 = L.popup({maxWidth: '300'});
+
+            
+                var html_0bde0e377ce943568a8374c339eea38f = $('<div id="html_0bde0e377ce943568a8374c339eea38f" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-6 P-01</h6>         Raymond Dehn          147<br>Betsy Hodges          100<br>Jacob Frey             95<br>Nekima Levy-Pounds     90<br>Tom Hoch               39</div>')[0];
+                popup_f5b2d49549bb438582662ef76ca2ff78.setContent(html_0bde0e377ce943568a8374c339eea38f);
+            
+
+            circle_marker_89f05f5cb30e40b3bf164518ed752e80.bindPopup(popup_f5b2d49549bb438582662ef76ca2ff78);
+
+            
+        
+    
+            var circle_marker_29500a04d0104a63b680effec8316471 = L.circleMarker(
+                [44.962751,-93.232988],
+                {
+  "bubblingMouseEvents": true,
+  "color": "limegreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "limegreen",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_19d287daaa094d12ad342e753e61317e = L.popup({maxWidth: '300'});
+
+            
+                var html_b718be638ece4548ad91a5112e15a3af = $('<div id="html_b718be638ece4548ad91a5112e15a3af" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-6 P-02</h6>         Betsy Hodges          373<br>Jacob Frey            333<br>Raymond Dehn          225<br>Nekima Levy-Pounds    140<br>Tom Hoch               45</div>')[0];
+                popup_19d287daaa094d12ad342e753e61317e.setContent(html_b718be638ece4548ad91a5112e15a3af);
+            
+
+            circle_marker_29500a04d0104a63b680effec8316471.bindPopup(popup_19d287daaa094d12ad342e753e61317e);
+
+            
+        
+    
+            var circle_marker_e1e744681431428a9e80c27dd99f9b97 = L.circleMarker(
+                [44.969885,-93.248489],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 93.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_feaedb5a15964da8aaa75fb857ac01d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_2dc9dd5bb7c04306a39c9580b5c215b0 = $('<div id="html_2dc9dd5bb7c04306a39c9580b5c215b0" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-6 P-03</h6>         Jacob Frey            803<br>Betsy Hodges          429<br>Raymond Dehn          105<br>Nekima Levy-Pounds     66<br>Tom Hoch               39</div>')[0];
+                popup_feaedb5a15964da8aaa75fb857ac01d9.setContent(html_2dc9dd5bb7c04306a39c9580b5c215b0);
+            
+
+            circle_marker_e1e744681431428a9e80c27dd99f9b97.bindPopup(popup_feaedb5a15964da8aaa75fb857ac01d9);
+
+            
+        
+    
+            var circle_marker_fba753dcb9fd4be3b7dcbf3a0ddf3cfd = L.circleMarker(
+                [44.968657,-93.258609],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 35.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_7751f8128ad84f97ab2210d384860dc5 = L.popup({maxWidth: '300'});
+
+            
+                var html_92265d0c56244890a1388bdbf745e013 = $('<div id="html_92265d0c56244890a1388bdbf745e013" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-6 P-04</h6>         Jacob Frey            292<br>Betsy Hodges          152<br>Nekima Levy-Pounds     76<br>Tom Hoch               61<br>Raymond Dehn           60</div>')[0];
+                popup_7751f8128ad84f97ab2210d384860dc5.setContent(html_92265d0c56244890a1388bdbf745e013);
+            
+
+            circle_marker_fba753dcb9fd4be3b7dcbf3a0ddf3cfd.bindPopup(popup_7751f8128ad84f97ab2210d384860dc5);
+
+            
+        
+    
+            var circle_marker_31e2dc2218c04605a2ead5307b34f41e = L.circleMarker(
+                [44.962695,-93.252406],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 23.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_34dae9e255324646907b9a7d996e4ceb = L.popup({maxWidth: '300'});
+
+            
+                var html_b4d538c7979b4538b5ee25ef0a4f72aa = $('<div id="html_b4d538c7979b4538b5ee25ef0a4f72aa" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-6 P-05</h6>         Jacob Frey            249<br>Betsy Hodges          157<br>Raymond Dehn           60<br>Nekima Levy-Pounds     44<br>Tom Hoch               24</div>')[0];
+                popup_34dae9e255324646907b9a7d996e4ceb.setContent(html_b4d538c7979b4538b5ee25ef0a4f72aa);
+            
+
+            circle_marker_31e2dc2218c04605a2ead5307b34f41e.bindPopup(popup_34dae9e255324646907b9a7d996e4ceb);
+
+            
+        
+    
+            var circle_marker_7bceceb347d74d3c91d5468941cca58b = L.circleMarker(
+                [44.962695,-93.262588],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 18.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_9b35d3f7a2a1469594c98db269c79c6d = L.popup({maxWidth: '300'});
+
+            
+                var html_f9f51b69dd044bfcb40e8bc93a465144 = $('<div id="html_f9f51b69dd044bfcb40e8bc93a465144" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-6 P-06</h6>         Jacob Frey            204<br>Betsy Hodges          131<br>Nekima Levy-Pounds     69<br>Raymond Dehn           55<br>Tom Hoch               33</div>')[0];
+                popup_9b35d3f7a2a1469594c98db269c79c6d.setContent(html_f9f51b69dd044bfcb40e8bc93a465144);
+            
+
+            circle_marker_7bceceb347d74d3c91d5468941cca58b.bindPopup(popup_9b35d3f7a2a1469594c98db269c79c6d);
+
+            
+        
+    
+            var circle_marker_6dc8e8cf1a744797b0f5946d56d0b7e9 = L.circleMarker(
+                [44.958243,-93.265873],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_84672922ae7b4fad9b61e7f76d27a86b = L.popup({maxWidth: '300'});
+
+            
+                var html_3e5788fb37e447bbace5f89dbe9faae1 = $('<div id="html_3e5788fb37e447bbace5f89dbe9faae1" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-6 P-07</h6>         Jacob Frey            131<br>Betsy Hodges          116<br>Tom Hoch               30<br>Nekima Levy-Pounds     29<br>Raymond Dehn           26</div>')[0];
+                popup_84672922ae7b4fad9b61e7f76d27a86b.setContent(html_3e5788fb37e447bbace5f89dbe9faae1);
+            
+
+            circle_marker_6dc8e8cf1a744797b0f5946d56d0b7e9.bindPopup(popup_84672922ae7b4fad9b61e7f76d27a86b);
+
+            
+        
+    
+            var circle_marker_e71c05171ca444288106c08da9877061 = L.circleMarker(
+                [44.951957,-93.26767],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_4e38106f0d7b416bac7769565a5643a5 = L.popup({maxWidth: '300'});
+
+            
+                var html_a8efe5670ed14b8ea70e07009f9fa1eb = $('<div id="html_a8efe5670ed14b8ea70e07009f9fa1eb" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-6 P-08</h6>         Jacob Frey            176<br>Betsy Hodges          111<br>Nekima Levy-Pounds     63<br>Raymond Dehn           50<br>Tom Hoch               48</div>')[0];
+                popup_4e38106f0d7b416bac7769565a5643a5.setContent(html_a8efe5670ed14b8ea70e07009f9fa1eb);
+            
+
+            circle_marker_e71c05171ca444288106c08da9877061.bindPopup(popup_4e38106f0d7b416bac7769565a5643a5);
+
+            
+        
+    
+            var circle_marker_118520abe3304e7090b644c09f8cf73b = L.circleMarker(
+                [44.964644,-93.273915],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_72661d7295174f5198175a3ef3e742d3 = L.popup({maxWidth: '300'});
+
+            
+                var html_286170fe64d1421a9b88b43dc5009e65 = $('<div id="html_286170fe64d1421a9b88b43dc5009e65" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-6 P-09</h6>         Jacob Frey            196<br>Nekima Levy-Pounds    144<br>Betsy Hodges          132<br>Raymond Dehn          128<br>Tom Hoch               97</div>')[0];
+                popup_72661d7295174f5198175a3ef3e742d3.setContent(html_286170fe64d1421a9b88b43dc5009e65);
+            
+
+            circle_marker_118520abe3304e7090b644c09f8cf73b.bindPopup(popup_72661d7295174f5198175a3ef3e742d3);
+
+            
+        
+    
+            var circle_marker_3ab4df07c46c47179697373db1951fc8 = L.circleMarker(
+                [44.974616,-93.314366],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 20.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_854a359f61c446a0a4893816b6739bb1 = L.popup({maxWidth: '300'});
+
+            
+                var html_add05c9f324d4900891a7bb4de19a9a0 = $('<div id="html_add05c9f324d4900891a7bb4de19a9a0" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-7 P-01C</h6>         Raymond Dehn          216<br>Tom Hoch              136<br>Jacob Frey            133<br>Betsy Hodges           91<br>Nekima Levy-Pounds     63</div>')[0];
+                popup_854a359f61c446a0a4893816b6739bb1.setContent(html_add05c9f324d4900891a7bb4de19a9a0);
+            
+
+            circle_marker_3ab4df07c46c47179697373db1951fc8.bindPopup(popup_854a359f61c446a0a4893816b6739bb1);
+
+            
+        
+    
+            var circle_marker_cc31b3ce1b7d4c98b534f5cdf3de48dc = L.circleMarker(
+                [44.961761,-93.308355],
+                {
+  "bubblingMouseEvents": true,
+  "color": "m",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "m",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 23.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_8c75d84dce2e42e093ba036df1f6afcc = L.popup({maxWidth: '300'});
+
+            
+                var html_8dcae4b7940843c4b3dc57a2cae90139 = $('<div id="html_8dcae4b7940843c4b3dc57a2cae90139" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-7 P-02D</h6>         Tom Hoch              381<br>Jacob Frey            286<br>Betsy Hodges          115<br>Raymond Dehn           60<br>Nekima Levy-Pounds     44</div>')[0];
+                popup_8c75d84dce2e42e093ba036df1f6afcc.setContent(html_8dcae4b7940843c4b3dc57a2cae90139);
+            
+
+            circle_marker_cc31b3ce1b7d4c98b534f5cdf3de48dc.bindPopup(popup_8c75d84dce2e42e093ba036df1f6afcc);
+
+            
+        
+    
+            var circle_marker_18b78e715b3e464885352dfef169c25d = L.circleMarker(
+                [44.967923,-93.294332],
+                {
+  "bubblingMouseEvents": true,
+  "color": "m",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "m",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 33.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_eca8ec68dabb44649d8471455c4e3a26 = L.popup({maxWidth: '300'});
+
+            
+                var html_a56b43d76d9341b49ef573315592efd9 = $('<div id="html_a56b43d76d9341b49ef573315592efd9" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-7 P-03</h6>         Tom Hoch              420<br>Jacob Frey            285<br>Betsy Hodges          196<br>Raymond Dehn          182<br>Nekima Levy-Pounds    159</div>')[0];
+                popup_eca8ec68dabb44649d8471455c4e3a26.setContent(html_a56b43d76d9341b49ef573315592efd9);
+            
+
+            circle_marker_18b78e715b3e464885352dfef169c25d.bindPopup(popup_eca8ec68dabb44649d8471455c4e3a26);
+
+            
+        
+    
+            var circle_marker_cdb12a0c1a09407e9bc9339404fcdaeb = L.circleMarker(
+                [44.953514,-93.320228],
+                {
+  "bubblingMouseEvents": true,
+  "color": "m",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "m",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_631add8c790a43e6997ccacf42383442 = L.popup({maxWidth: '300'});
+
+            
+                var html_1df7a42d569a4bfe9ac621d5d3d68515 = $('<div id="html_1df7a42d569a4bfe9ac621d5d3d68515" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-7 P-04D</h6>         Tom Hoch              382<br>Jacob Frey            319<br>Betsy Hodges          150<br>Raymond Dehn           85<br>Nekima Levy-Pounds     80</div>')[0];
+                popup_631add8c790a43e6997ccacf42383442.setContent(html_1df7a42d569a4bfe9ac621d5d3d68515);
+            
+
+            circle_marker_cdb12a0c1a09407e9bc9339404fcdaeb.bindPopup(popup_631add8c790a43e6997ccacf42383442);
+
+            
+        
+    
+            var circle_marker_10bf47a5b7ac4dc1b6b5238267489fcf = L.circleMarker(
+                [44.966505,-93.284006],
+                {
+  "bubblingMouseEvents": true,
+  "color": "m",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "m",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_2da5ce7faa5b4f8bbeda49bf8bb71786 = L.popup({maxWidth: '300'});
+
+            
+                var html_50f28904551441c18d56857786d9143f = $('<div id="html_50f28904551441c18d56857786d9143f" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-7 P-05</h6>         Tom Hoch              240<br>Jacob Frey            238<br>Nekima Levy-Pounds    148<br>Raymond Dehn          144<br>Betsy Hodges          125</div>')[0];
+                popup_2da5ce7faa5b4f8bbeda49bf8bb71786.setContent(html_50f28904551441c18d56857786d9143f);
+            
+
+            circle_marker_10bf47a5b7ac4dc1b6b5238267489fcf.bindPopup(popup_2da5ce7faa5b4f8bbeda49bf8bb71786);
+
+            
+        
+    
+            var circle_marker_4dbd987392e844f0855cbda638d020d9 = L.circleMarker(
+                [44.974483,-93.27076],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_b36a4221ab7148138f54c8eb033553b1 = L.popup({maxWidth: '300'});
+
+            
+                var html_6057081171f54865b3955ebe8b884d6f = $('<div id="html_6057081171f54865b3955ebe8b884d6f" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-7 P-06</h6>         Jacob Frey            249<br>Tom Hoch              170<br>Betsy Hodges          131<br>Raymond Dehn          106<br>Nekima Levy-Pounds     81</div>')[0];
+                popup_b36a4221ab7148138f54c8eb033553b1.setContent(html_6057081171f54865b3955ebe8b884d6f);
+            
+
+            circle_marker_4dbd987392e844f0855cbda638d020d9.bindPopup(popup_b36a4221ab7148138f54c8eb033553b1);
+
+            
+        
+    
+            var circle_marker_b0d2955c25244373b46e64a2e07b9037 = L.circleMarker(
+                [44.969576,-93.309669],
+                {
+  "bubblingMouseEvents": true,
+  "color": "m",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "m",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_7acc6d4e89cf4e62951f3e74735583f5 = L.popup({maxWidth: '300'});
+
+            
+                var html_09d6eecd18f84e3f9d194ab28504d08d = $('<div id="html_09d6eecd18f84e3f9d194ab28504d08d" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-7 P-07</h6>         Tom Hoch              219<br>Jacob Frey            175<br>Raymond Dehn           94<br>Betsy Hodges           91<br>Nekima Levy-Pounds     60</div>')[0];
+                popup_7acc6d4e89cf4e62951f3e74735583f5.setContent(html_09d6eecd18f84e3f9d194ab28504d08d);
+            
+
+            circle_marker_b0d2955c25244373b46e64a2e07b9037.bindPopup(popup_7acc6d4e89cf4e62951f3e74735583f5);
+
+            
+        
+    
+            var circle_marker_e247a3fca7e747c3bbb0c9b22ccf4b8a = L.circleMarker(
+                [44.969576,-93.309669],
+                {
+  "bubblingMouseEvents": true,
+  "color": "m",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "m",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_757e18797e504bd893ba3696b636533d = L.popup({maxWidth: '300'});
+
+            
+                var html_122bd20699ba49dfb67750d58637f025 = $('<div id="html_122bd20699ba49dfb67750d58637f025" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-7 P-08</h6>         Tom Hoch              475<br>Jacob Frey            460<br>Betsy Hodges          210<br>Nekima Levy-Pounds    152<br>Raymond Dehn          143</div>')[0];
+                popup_757e18797e504bd893ba3696b636533d.setContent(html_122bd20699ba49dfb67750d58637f025);
+            
+
+            circle_marker_e247a3fca7e747c3bbb0c9b22ccf4b8a.bindPopup(popup_757e18797e504bd893ba3696b636533d);
+
+            
+        
+    
+            var circle_marker_c87ff16c31624c36bfebae7b71ad58b8 = L.circleMarker(
+                [44.953591,-93.300069],
+                {
+  "bubblingMouseEvents": true,
+  "color": "m",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "m",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_edfeb5be0de24c4da7ae03573afb04fa = L.popup({maxWidth: '300'});
+
+            
+                var html_6297a213db564f1c98b6b8dbdafb1c71 = $('<div id="html_6297a213db564f1c98b6b8dbdafb1c71" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-7 P-09</h6>         Tom Hoch              308<br>Jacob Frey            244<br>Betsy Hodges          237<br>Raymond Dehn          212<br>Nekima Levy-Pounds    115</div>')[0];
+                popup_edfeb5be0de24c4da7ae03573afb04fa.setContent(html_6297a213db564f1c98b6b8dbdafb1c71);
+            
+
+            circle_marker_c87ff16c31624c36bfebae7b71ad58b8.bindPopup(popup_edfeb5be0de24c4da7ae03573afb04fa);
+
+            
+        
+    
+            var circle_marker_449e1d3c80c64eb388e3d8dc2f83110b = L.circleMarker(
+                [44.963718,-93.282963],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_a186add57a1e4e109d0bcdc5f4c5bc51 = L.popup({maxWidth: '300'});
+
+            
+                var html_fefeeaf742ff4f6c8f3ceb2c85fe1fbc = $('<div id="html_fefeeaf742ff4f6c8f3ceb2c85fe1fbc" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-7 P-10</h6>         Raymond Dehn          74<br>Jacob Frey            65<br>Nekima Levy-Pounds    58<br>Tom Hoch              56<br>Betsy Hodges          35</div>')[0];
+                popup_a186add57a1e4e109d0bcdc5f4c5bc51.setContent(html_fefeeaf742ff4f6c8f3ceb2c85fe1fbc);
+            
+
+            circle_marker_449e1d3c80c64eb388e3d8dc2f83110b.bindPopup(popup_a186add57a1e4e109d0bcdc5f4c5bc51);
+
+            
+        
+    
+            var circle_marker_e64957d39d2540f28b0a9afd787055cd = L.circleMarker(
+                [44.946581,-93.281324],
+                {
+  "bubblingMouseEvents": true,
+  "color": "limegreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "limegreen",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 29.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_aca6e6e9f98f473c9fd04acb573183e0 = L.popup({maxWidth: '300'});
+
+            
+                var html_a8ec8b58497c444caa70f8b0b5e4d7bd = $('<div id="html_a8ec8b58497c444caa70f8b0b5e4d7bd" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-8 P-01</h6>         Betsy Hodges          180<br>Raymond Dehn           64<br>Nekima Levy-Pounds     60<br>Tom Hoch               45<br>Jacob Frey             45</div>')[0];
+                popup_aca6e6e9f98f473c9fd04acb573183e0.setContent(html_a8ec8b58497c444caa70f8b0b5e4d7bd);
+            
+
+            circle_marker_e64957d39d2540f28b0a9afd787055cd.bindPopup(popup_aca6e6e9f98f473c9fd04acb573183e0);
+
+            
+        
+    
+            var circle_marker_c46d6d861dc148a1a8a98f96eb731266 = L.circleMarker(
+                [44.941336,-93.281356],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_083a800ea7dc4d10b884e7b59d49445c = L.popup({maxWidth: '300'});
+
+            
+                var html_58292254e42a47fa98d2bde13e1ae063 = $('<div id="html_58292254e42a47fa98d2bde13e1ae063" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-8 P-02</h6>         Raymond Dehn          277<br>Betsy Hodges          248<br>Nekima Levy-Pounds    229<br>Jacob Frey            203<br>Tom Hoch              169</div>')[0];
+                popup_083a800ea7dc4d10b884e7b59d49445c.setContent(html_58292254e42a47fa98d2bde13e1ae063);
+            
+
+            circle_marker_c46d6d861dc148a1a8a98f96eb731266.bindPopup(popup_083a800ea7dc4d10b884e7b59d49445c);
+
+            
+        
+    
+            var circle_marker_f538fb1e4c604243b691dca82df47355 = L.circleMarker(
+                [44.934111,-93.268273],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_eb6a6f602d574e42935aa1d98797e919 = L.popup({maxWidth: '300'});
+
+            
+                var html_f831c975c3af44228162c1373cdb9a21 = $('<div id="html_f831c975c3af44228162c1373cdb9a21" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-8 P-03</h6>         Raymond Dehn          162<br>Nekima Levy-Pounds    155<br>Betsy Hodges           82<br>Jacob Frey             61<br>Tom Hoch               44</div>')[0];
+                popup_eb6a6f602d574e42935aa1d98797e919.setContent(html_f831c975c3af44228162c1373cdb9a21);
+            
+
+            circle_marker_f538fb1e4c604243b691dca82df47355.bindPopup(popup_eb6a6f602d574e42935aa1d98797e919);
+
+            
+        
+    
+            var circle_marker_8e12879a4b0e41f1a4874cb789d8b580 = L.circleMarker(
+                [44.926933,-93.268219],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_0c394c4dd77146ab8b30be551e19fccf = L.popup({maxWidth: '300'});
+
+            
+                var html_25d7b169ee174b61856e2b3faff6aa66 = $('<div id="html_25d7b169ee174b61856e2b3faff6aa66" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-8 P-04</h6>         Nekima Levy-Pounds    173<br>Betsy Hodges          143<br>Raymond Dehn          125<br>Jacob Frey            125<br>Tom Hoch              105</div>')[0];
+                popup_0c394c4dd77146ab8b30be551e19fccf.setContent(html_25d7b169ee174b61856e2b3faff6aa66);
+            
+
+            circle_marker_8e12879a4b0e41f1a4874cb789d8b580.bindPopup(popup_0c394c4dd77146ab8b30be551e19fccf);
+
+            
+        
+    
+            var circle_marker_42786ed4b478485e95e9c2fa9a7f875a = L.circleMarker(
+                [44.917916,-93.268348],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_92a5b15dffe24261828340890f173196 = L.popup({maxWidth: '300'});
+
+            
+                var html_09beb1fdaccf49119d54a8b4e564e1af = $('<div id="html_09beb1fdaccf49119d54a8b4e564e1af" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-8 P-05</h6>         Jacob Frey            244<br>Betsy Hodges          237<br>Tom Hoch              230<br>Nekima Levy-Pounds    217<br>Raymond Dehn          154</div>')[0];
+                popup_92a5b15dffe24261828340890f173196.setContent(html_09beb1fdaccf49119d54a8b4e564e1af);
+            
+
+            circle_marker_42786ed4b478485e95e9c2fa9a7f875a.bindPopup(popup_92a5b15dffe24261828340890f173196);
+
+            
+        
+    
+            var circle_marker_841c25e93d5741b3aff2047ebf0fba3d = L.circleMarker(
+                [44.934105,-93.281386],
+                {
+  "bubblingMouseEvents": true,
+  "color": "limegreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "limegreen",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 12.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_7b3dcec4c05f49c5b9525905f118412e = L.popup({maxWidth: '300'});
+
+            
+                var html_10c44ff0ede349c694fc0101eaad436c = $('<div id="html_10c44ff0ede349c694fc0101eaad436c" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-8 P-06</h6>         Betsy Hodges          338<br>Raymond Dehn          287<br>Nekima Levy-Pounds    226<br>Jacob Frey            218<br>Tom Hoch              158</div>')[0];
+                popup_7b3dcec4c05f49c5b9525905f118412e.setContent(html_10c44ff0ede349c694fc0101eaad436c);
+            
+
+            circle_marker_841c25e93d5741b3aff2047ebf0fba3d.bindPopup(popup_7b3dcec4c05f49c5b9525905f118412e);
+
+            
+        
+    
+            var circle_marker_b219d01856e74ada9baf9d1d7447881d = L.circleMarker(
+                [44.925043,-93.281815],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_74c45ec2577149418838472ced755ee9 = L.popup({maxWidth: '300'});
+
+            
+                var html_84510cbec6524880a2504bb35ffdfb65 = $('<div id="html_84510cbec6524880a2504bb35ffdfb65" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-8 P-07</h6>         Jacob Frey            362<br>Betsy Hodges          358<br>Raymond Dehn          328<br>Tom Hoch              321<br>Nekima Levy-Pounds    203</div>')[0];
+                popup_74c45ec2577149418838472ced755ee9.setContent(html_84510cbec6524880a2504bb35ffdfb65);
+            
+
+            circle_marker_b219d01856e74ada9baf9d1d7447881d.bindPopup(popup_74c45ec2577149418838472ced755ee9);
+
+            
+        
+    
+            var circle_marker_4c98b352858e4acd91669e85e6aa9c51 = L.circleMarker(
+                [44.927852,-93.254911],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_709fc4b7fbab403ea9f1e7cfbbaa0d55 = L.popup({maxWidth: '300'});
+
+            
+                var html_4497841d94f24ed2982793cbeedcf8c0 = $('<div id="html_4497841d94f24ed2982793cbeedcf8c0" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-8 P-08</h6>         Raymond Dehn          309<br>Betsy Hodges          293<br>Nekima Levy-Pounds    280<br>Jacob Frey            229<br>Tom Hoch              180</div>')[0];
+                popup_709fc4b7fbab403ea9f1e7cfbbaa0d55.setContent(html_4497841d94f24ed2982793cbeedcf8c0);
+            
+
+            circle_marker_4c98b352858e4acd91669e85e6aa9c51.bindPopup(popup_709fc4b7fbab403ea9f1e7cfbbaa0d55);
+
+            
+        
+    
+            var circle_marker_4826c67429de4bad9746179ba6b49cdd = L.circleMarker(
+                [44.940435,-93.268934],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_b2a8ee5b5b424ff9be993bd3ad25b9f3 = L.popup({maxWidth: '300'});
+
+            
+                var html_0726e247657f4a09a8059dce4124f471 = $('<div id="html_0726e247657f4a09a8059dce4124f471" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-9 P-01</h6>         Raymond Dehn          172<br>Nekima Levy-Pounds    105<br>Jacob Frey             87<br>Betsy Hodges           75<br>Tom Hoch               34</div>')[0];
+                popup_b2a8ee5b5b424ff9be993bd3ad25b9f3.setContent(html_0726e247657f4a09a8059dce4124f471);
+            
+
+            circle_marker_4826c67429de4bad9746179ba6b49cdd.bindPopup(popup_b2a8ee5b5b424ff9be993bd3ad25b9f3);
+
+            
+        
+    
+            var circle_marker_01d620a177334f4e9b748f45bc5e17c6 = L.circleMarker(
+                [44.9409,-93.255181],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 34.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_3a5d96182ee146dcbcc067b1644cda57 = L.popup({maxWidth: '300'});
+
+            
+                var html_59d6f8d0335c423a90fa299ba5cfc1b8 = $('<div id="html_59d6f8d0335c423a90fa299ba5cfc1b8" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-9 P-02</h6>         Raymond Dehn          471<br>Nekima Levy-Pounds    333<br>Betsy Hodges          239<br>Jacob Frey            126<br>Tom Hoch              110</div>')[0];
+                popup_3a5d96182ee146dcbcc067b1644cda57.setContent(html_59d6f8d0335c423a90fa299ba5cfc1b8);
+            
+
+            circle_marker_01d620a177334f4e9b748f45bc5e17c6.bindPopup(popup_3a5d96182ee146dcbcc067b1644cda57);
+
+            
+        
+    
+            var circle_marker_d56d1ab23544442ab8ccd6129db75489 = L.circleMarker(
+                [44.953997,-93.256866],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_0f7144102151418684e390c3d3dfc954 = L.popup({maxWidth: '300'});
+
+            
+                var html_79437fef214b4e73acce2dd7b274ca06 = $('<div id="html_79437fef214b4e73acce2dd7b274ca06" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-9 P-03</h6>         Jacob Frey            156<br>Betsy Hodges          145<br>Nekima Levy-Pounds    116<br>Raymond Dehn          105<br>Tom Hoch               67</div>')[0];
+                popup_0f7144102151418684e390c3d3dfc954.setContent(html_79437fef214b4e73acce2dd7b274ca06);
+            
+
+            circle_marker_d56d1ab23544442ab8ccd6129db75489.bindPopup(popup_0f7144102151418684e390c3d3dfc954);
+
+            
+        
+    
+            var circle_marker_f1d6961d8c354fb58d3ece699d105b84 = L.circleMarker(
+                [44.95373,-93.247359],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_140001ca8c954bcdbb365e9fe2a33ceb = L.popup({maxWidth: '300'});
+
+            
+                var html_45ca01a60a8f41509ee6e4fe6d0f67d0 = $('<div id="html_45ca01a60a8f41509ee6e4fe6d0f67d0" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-9 P-04</h6>         Raymond Dehn          132<br>Betsy Hodges           93<br>Jacob Frey             86<br>Nekima Levy-Pounds     77<br>Tom Hoch               41</div>')[0];
+                popup_140001ca8c954bcdbb365e9fe2a33ceb.setContent(html_45ca01a60a8f41509ee6e4fe6d0f67d0);
+            
+
+            circle_marker_f1d6961d8c354fb58d3ece699d105b84.bindPopup(popup_140001ca8c954bcdbb365e9fe2a33ceb);
+
+            
+        
+    
+            var circle_marker_4d0a4ad1d2504f7180ce000bae2b81fc = L.circleMarker(
+                [44.946522,-93.251211],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_2a33c37a7a9a40f69ec9d09ee324d34b = L.popup({maxWidth: '300'});
+
+            
+                var html_46d6a0649d94468a8c51eab2c5f978f0 = $('<div id="html_46d6a0649d94468a8c51eab2c5f978f0" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-9 P-05</h6>         Raymond Dehn          81<br>Nekima Levy-Pounds    66<br>Betsy Hodges          43<br>Jacob Frey            34<br>Tom Hoch              23</div>')[0];
+                popup_2a33c37a7a9a40f69ec9d09ee324d34b.setContent(html_46d6a0649d94468a8c51eab2c5f978f0);
+            
+
+            circle_marker_4d0a4ad1d2504f7180ce000bae2b81fc.bindPopup(popup_2a33c37a7a9a40f69ec9d09ee324d34b);
+
+            
+        
+    
+            var circle_marker_660977bdf7c14e60940bc51c293ce9dd = L.circleMarker(
+                [44.942929,-93.240573],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_02162802ae3447e298e8d598d7a266e2 = L.popup({maxWidth: '300'});
+
+            
+                var html_38c31ceaa7d04f2d9eb63f843880a8b3 = $('<div id="html_38c31ceaa7d04f2d9eb63f843880a8b3" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-9 P-06</h6>         Raymond Dehn          278<br>Nekima Levy-Pounds    225<br>Betsy Hodges          220<br>Jacob Frey            184<br>Tom Hoch              139</div>')[0];
+                popup_02162802ae3447e298e8d598d7a266e2.setContent(html_38c31ceaa7d04f2d9eb63f843880a8b3);
+            
+
+            circle_marker_660977bdf7c14e60940bc51c293ce9dd.bindPopup(popup_02162802ae3447e298e8d598d7a266e2);
+
+            
+        
+    
+            var circle_marker_91e7a1f6ceb649fa9c406da0c93ef597 = L.circleMarker(
+                [44.935942,-93.254903],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_c75d7e46fdfb48e2aab8d53df0ea1fbe = L.popup({maxWidth: '300'});
+
+            
+                var html_3970c2eca26e491c9df1cd79ef78988b = $('<div id="html_3970c2eca26e491c9df1cd79ef78988b" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-9 P-07</h6>         Raymond Dehn          179<br>Nekima Levy-Pounds    159<br>Betsy Hodges          130<br>Tom Hoch               88<br>Jacob Frey             75</div>')[0];
+                popup_c75d7e46fdfb48e2aab8d53df0ea1fbe.setContent(html_3970c2eca26e491c9df1cd79ef78988b);
+            
+
+            circle_marker_91e7a1f6ceb649fa9c406da0c93ef597.bindPopup(popup_c75d7e46fdfb48e2aab8d53df0ea1fbe);
+
+            
+        
+    
+            var circle_marker_2856e29a28f341cb9de69557311969a7 = L.circleMarker(
+                [44.94833,-93.235922],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_804c0dcb18ab4210a3fc6b87f9217e2b = L.popup({maxWidth: '300'});
+
+            
+                var html_4bf0d937b38f4cf5891ca90eeea6330f = $('<div id="html_4bf0d937b38f4cf5891ca90eeea6330f" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-9 P-08</h6>         Jacob Frey            22<br>Raymond Dehn          16<br>Nekima Levy-Pounds    16<br>Tom Hoch               9<br>Betsy Hodges           6</div>')[0];
+                popup_804c0dcb18ab4210a3fc6b87f9217e2b.setContent(html_4bf0d937b38f4cf5891ca90eeea6330f);
+            
+
+            circle_marker_2856e29a28f341cb9de69557311969a7.bindPopup(popup_804c0dcb18ab4210a3fc6b87f9217e2b);
+
+            
+        
+    
+            var circle_marker_7d22e45e161347e4bbd0014f3fa45813 = L.circleMarker(
+                [44.945818,-93.268343],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_8230f180619141358f7b8971e1014d2c = L.popup({maxWidth: '300'});
+
+            
+                var html_abff7a9568ce4fefb50bbc7a70587d92 = $('<div id="html_abff7a9568ce4fefb50bbc7a70587d92" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-9 P-09</h6>         Raymond Dehn          133<br>Nekima Levy-Pounds    105<br>Betsy Hodges           74<br>Jacob Frey             60<br>Tom Hoch               52</div>')[0];
+                popup_8230f180619141358f7b8971e1014d2c.setContent(html_abff7a9568ce4fefb50bbc7a70587d92);
+            
+
+            circle_marker_7d22e45e161347e4bbd0014f3fa45813.bindPopup(popup_8230f180619141358f7b8971e1014d2c);
+
+            
+        
+    
+            var circle_marker_107d7fc7b1a34db782050d5843d83ea7 = L.circleMarker(
+                [44.959107,-93.290547],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_f0d13c1fb2754c7cbc67ed1dcdaddf52 = L.popup({maxWidth: '300'});
+
+            
+                var html_1ee36800092a4e268ca778c890c496b0 = $('<div id="html_1ee36800092a4e268ca778c890c496b0" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-10 P-01</h6>         Raymond Dehn          235<br>Tom Hoch              197<br>Nekima Levy-Pounds    162<br>Betsy Hodges          160<br>Jacob Frey            138</div>')[0];
+                popup_f0d13c1fb2754c7cbc67ed1dcdaddf52.setContent(html_1ee36800092a4e268ca778c890c496b0);
+            
+
+            circle_marker_107d7fc7b1a34db782050d5843d83ea7.bindPopup(popup_f0d13c1fb2754c7cbc67ed1dcdaddf52);
+
+            
+        
+    
+            var circle_marker_0d49317594724dd78bd79541ee3dcf2a = L.circleMarker(
+                [44.951892,-93.293196],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_1b95759d0e834281a29e9f7582ecf78b = L.popup({maxWidth: '300'});
+
+            
+                var html_5157f2ebf8b249ec9495c13e28e06d53 = $('<div id="html_5157f2ebf8b249ec9495c13e28e06d53" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-10 P-02</h6>         Jacob Frey            232<br>Raymond Dehn          222<br>Tom Hoch              176<br>Betsy Hodges          168<br>Nekima Levy-Pounds    161</div>')[0];
+                popup_1b95759d0e834281a29e9f7582ecf78b.setContent(html_5157f2ebf8b249ec9495c13e28e06d53);
+            
+
+            circle_marker_0d49317594724dd78bd79541ee3dcf2a.bindPopup(popup_1b95759d0e834281a29e9f7582ecf78b);
+
+            
+        
+    
+            var circle_marker_ea96f5faba304b6f94923202ee175c15 = L.circleMarker(
+                [44.943008,-93.300855],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_561d734fbf1e47f2b8456f60a30d9915 = L.popup({maxWidth: '300'});
+
+            
+                var html_2475491f902e48feaf96d9da9d43619e = $('<div id="html_2475491f902e48feaf96d9da9d43619e" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-10 P-03A</h6>         Jacob Frey            229<br>Tom Hoch              211<br>Betsy Hodges          157<br>Raymond Dehn           99<br>Nekima Levy-Pounds     90</div>')[0];
+                popup_561d734fbf1e47f2b8456f60a30d9915.setContent(html_2475491f902e48feaf96d9da9d43619e);
+            
+
+            circle_marker_ea96f5faba304b6f94923202ee175c15.bindPopup(popup_561d734fbf1e47f2b8456f60a30d9915);
+
+            
+        
+    
+            var circle_marker_ac9b2e95e5be49a8bd3b21de17787ae0 = L.circleMarker(
+                [44.945567,-93.293203],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_84cbdf6a4b6949c7af6a8c3074cfadf5 = L.popup({maxWidth: '300'});
+
+            
+                var html_207b798134524ff3814d37c7e024999f = $('<div id="html_207b798134524ff3814d37c7e024999f" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-10 P-04</h6>         Jacob Frey            162<br>Raymond Dehn          161<br>Betsy Hodges          154<br>Tom Hoch              125<br>Nekima Levy-Pounds    119</div>')[0];
+                popup_84cbdf6a4b6949c7af6a8c3074cfadf5.setContent(html_207b798134524ff3814d37c7e024999f);
+            
+
+            circle_marker_ac9b2e95e5be49a8bd3b21de17787ae0.bindPopup(popup_84cbdf6a4b6949c7af6a8c3074cfadf5);
+
+            
+        
+    
+            var circle_marker_aa6d2cfb9c5e4e90b58a781a7f3497a4 = L.circleMarker(
+                [44.931378,-93.294991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "limegreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "limegreen",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_2ced2392b9674ca1a9fc1b42f40dc17f = L.popup({maxWidth: '300'});
+
+            
+                var html_8db619ded570444ebf5f8b5f3785f33b = $('<div id="html_8db619ded570444ebf5f8b5f3785f33b" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-10 P-05A</h6>         Betsy Hodges          202<br>Jacob Frey            183<br>Tom Hoch              172<br>Raymond Dehn           98<br>Nekima Levy-Pounds     79</div>')[0];
+                popup_2ced2392b9674ca1a9fc1b42f40dc17f.setContent(html_8db619ded570444ebf5f8b5f3785f33b);
+            
+
+            circle_marker_aa6d2cfb9c5e4e90b58a781a7f3497a4.bindPopup(popup_2ced2392b9674ca1a9fc1b42f40dc17f);
+
+            
+        
+    
+            var circle_marker_57d748686e39415db02cda896a4b55e7 = L.circleMarker(
+                [44.940433,-93.293238],
+                {
+  "bubblingMouseEvents": true,
+  "color": "limegreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "limegreen",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_d6080d6b638a494dbb1789fac75d2a22 = L.popup({maxWidth: '300'});
+
+            
+                var html_acfccc69be5249d080948042bf178a24 = $('<div id="html_acfccc69be5249d080948042bf178a24" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-10 P-06</h6>         Betsy Hodges          218<br>Tom Hoch              202<br>Raymond Dehn          192<br>Jacob Frey            188<br>Nekima Levy-Pounds    146</div>')[0];
+                popup_d6080d6b638a494dbb1789fac75d2a22.setContent(html_acfccc69be5249d080948042bf178a24);
+            
+
+            circle_marker_57d748686e39415db02cda896a4b55e7.bindPopup(popup_d6080d6b638a494dbb1789fac75d2a22);
+
+            
+        
+    
+            var circle_marker_4334fd05662f490db1a8e998f7e44e5f = L.circleMarker(
+                [44.960882,-93.282944],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_1bc1b05de5cb40c392f4c76ed54adec3 = L.popup({maxWidth: '300'});
+
+            
+                var html_29536a66f48f424a84721537d9205a27 = $('<div id="html_29536a66f48f424a84721537d9205a27" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-10 P-07</h6>         Raymond Dehn          219<br>Nekima Levy-Pounds    153<br>Betsy Hodges          105<br>Jacob Frey             96<br>Tom Hoch               55</div>')[0];
+                popup_1bc1b05de5cb40c392f4c76ed54adec3.setContent(html_29536a66f48f424a84721537d9205a27);
+            
+
+            circle_marker_4334fd05662f490db1a8e998f7e44e5f.bindPopup(popup_1bc1b05de5cb40c392f4c76ed54adec3);
+
+            
+        
+    
+            var circle_marker_c1e8b11aa4fc4814ad38a1e5a9b5f018 = L.circleMarker(
+                [44.957364,-93.282951],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_05d741d9c7354a33904b8759ceae380c = L.popup({maxWidth: '300'});
+
+            
+                var html_8a8ea1b94cbb4311a99aee60f6198093 = $('<div id="html_8a8ea1b94cbb4311a99aee60f6198093" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-10 P-08</h6>         Raymond Dehn          168<br>Nekima Levy-Pounds    103<br>Jacob Frey             96<br>Tom Hoch               87<br>Betsy Hodges           79</div>')[0];
+                popup_05d741d9c7354a33904b8759ceae380c.setContent(html_8a8ea1b94cbb4311a99aee60f6198093);
+            
+
+            circle_marker_c1e8b11aa4fc4814ad38a1e5a9b5f018.bindPopup(popup_05d741d9c7354a33904b8759ceae380c);
+
+            
+        
+    
+            var circle_marker_d5f8c2b5773642f3941854ecb8747c1c = L.circleMarker(
+                [44.956602,-93.274031],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 20.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_4cab4682b0b5460dbcc17d95db570c18 = L.popup({maxWidth: '300'});
+
+            
+                var html_b3a5edd7f6bb45a09af0610058eb163c = $('<div id="html_b3a5edd7f6bb45a09af0610058eb163c" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-10 P-09</h6>         Raymond Dehn          250<br>Nekima Levy-Pounds    169<br>Betsy Hodges          115<br>Jacob Frey            111<br>Tom Hoch              105</div>')[0];
+                popup_4cab4682b0b5460dbcc17d95db570c18.setContent(html_b3a5edd7f6bb45a09af0610058eb163c);
+            
+
+            circle_marker_d5f8c2b5773642f3941854ecb8747c1c.bindPopup(popup_4cab4682b0b5460dbcc17d95db570c18);
+
+            
+        
+    
+            var circle_marker_c493a6d32763484fba270c6d7fc752eb = L.circleMarker(
+                [44.951939,-93.282993],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_833c7a6e04614728a671325176e3f1dc = L.popup({maxWidth: '300'});
+
+            
+                var html_f42d0335c760409cad6d5f99d44d79f7 = $('<div id="html_f42d0335c760409cad6d5f99d44d79f7" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-10 P-10</h6>         Raymond Dehn          166<br>Betsy Hodges          119<br>Nekima Levy-Pounds    118<br>Tom Hoch               97<br>Jacob Frey             90</div>')[0];
+                popup_833c7a6e04614728a671325176e3f1dc.setContent(html_f42d0335c760409cad6d5f99d44d79f7);
+            
+
+            circle_marker_c493a6d32763484fba270c6d7fc752eb.bindPopup(popup_833c7a6e04614728a671325176e3f1dc);
+
+            
+        
+    
+            var circle_marker_9c9fc433e9ee4b49bbe429b502895d34 = L.circleMarker(
+                [44.915986,-93.281845],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_9eec0bbed38944399d861b78a46b4c24 = L.popup({maxWidth: '300'});
+
+            
+                var html_429c8687350c46fbb0ff8acfc45cd2aa = $('<div id="html_429c8687350c46fbb0ff8acfc45cd2aa" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-11 P-01</h6>         Jacob Frey            239<br>Tom Hoch              221<br>Betsy Hodges          201<br>Nekima Levy-Pounds    132<br>Raymond Dehn          121</div>')[0];
+                popup_9eec0bbed38944399d861b78a46b4c24.setContent(html_429c8687350c46fbb0ff8acfc45cd2aa);
+            
+
+            circle_marker_9c9fc433e9ee4b49bbe429b502895d34.bindPopup(popup_9eec0bbed38944399d861b78a46b4c24);
+
+            
+        
+    
+            var circle_marker_7c32f4e6f34349a7952b66d1f21a5780 = L.circleMarker(
+                [44.907851,-93.281601],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_ec7c356af52f49908782997cbc40fcaf = L.popup({maxWidth: '300'});
+
+            
+                var html_481235dfa7c446c19ff37361f267df51 = $('<div id="html_481235dfa7c446c19ff37361f267df51" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-11 P-02</h6>         Jacob Frey            319<br>Tom Hoch              318<br>Betsy Hodges          247<br>Raymond Dehn          108<br>Nekima Levy-Pounds     94</div>')[0];
+                popup_ec7c356af52f49908782997cbc40fcaf.setContent(html_481235dfa7c446c19ff37361f267df51);
+            
+
+            circle_marker_7c32f4e6f34349a7952b66d1f21a5780.bindPopup(popup_ec7c356af52f49908782997cbc40fcaf);
+
+            
+        
+    
+            var circle_marker_af8adb9d21284a9ba9af2a5687b3d6e2 = L.circleMarker(
+                [44.895703,-93.283178],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_91e6dab5a2054e12a641dba5552c3eca = L.popup({maxWidth: '300'});
+
+            
+                var html_4667d473b2bb44da979e61af9319a71c = $('<div id="html_4667d473b2bb44da979e61af9319a71c" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-11 P-03</h6>         Jacob Frey            184<br>Tom Hoch              167<br>Betsy Hodges          137<br>Nekima Levy-Pounds    105<br>Raymond Dehn           94</div>')[0];
+                popup_91e6dab5a2054e12a641dba5552c3eca.setContent(html_4667d473b2bb44da979e61af9319a71c);
+            
+
+            circle_marker_af8adb9d21284a9ba9af2a5687b3d6e2.bindPopup(popup_91e6dab5a2054e12a641dba5552c3eca);
+
+            
+        
+    
+            var circle_marker_bc8245bb2f604e7aa89f4bcc2d17f66a = L.circleMarker(
+                [44.918582,-93.254945],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_eff64b97168d42ecaedaac92f398dbda = L.popup({maxWidth: '300'});
+
+            
+                var html_90c93cfd77eb4273920f4a32f2dd60f3 = $('<div id="html_90c93cfd77eb4273920f4a32f2dd60f3" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-11 P-04</h6>         Jacob Frey            402<br>Tom Hoch              348<br>Betsy Hodges          278<br>Raymond Dehn          222<br>Nekima Levy-Pounds    212</div>')[0];
+                popup_eff64b97168d42ecaedaac92f398dbda.setContent(html_90c93cfd77eb4273920f4a32f2dd60f3);
+            
+
+            circle_marker_bc8245bb2f604e7aa89f4bcc2d17f66a.bindPopup(popup_eff64b97168d42ecaedaac92f398dbda);
+
+            
+        
+    
+            var circle_marker_0e245fd5e64b40089c56fdfed9794804 = L.circleMarker(
+                [44.90814,-93.268516],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 12.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_ebc540f230e54628bc85d20129c5b3d4 = L.popup({maxWidth: '300'});
+
+            
+                var html_0b1a8602c3e8477ab29a296284f077cc = $('<div id="html_0b1a8602c3e8477ab29a296284f077cc" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-11 P-05</h6>         Jacob Frey            237<br>Tom Hoch              187<br>Betsy Hodges          154<br>Raymond Dehn           88<br>Nekima Levy-Pounds     85</div>')[0];
+                popup_ebc540f230e54628bc85d20129c5b3d4.setContent(html_0b1a8602c3e8477ab29a296284f077cc);
+            
+
+            circle_marker_0e245fd5e64b40089c56fdfed9794804.bindPopup(popup_ebc540f230e54628bc85d20129c5b3d4);
+
+            
+        
+    
+            var circle_marker_2b396856a46240f9b2f2504fc6a3277b = L.circleMarker(
+                [44.908874,-93.254347],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 34.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_ccd769d3810047abbdf6e651873d16c7 = L.popup({maxWidth: '300'});
+
+            
+                var html_d99728e1f4c24d8e82ea3c8cbe7c7122 = $('<div id="html_d99728e1f4c24d8e82ea3c8cbe7c7122" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-11 P-06</h6>         Jacob Frey            406<br>Tom Hoch              270<br>Betsy Hodges          240<br>Raymond Dehn          186<br>Nekima Levy-Pounds    117</div>')[0];
+                popup_ccd769d3810047abbdf6e651873d16c7.setContent(html_d99728e1f4c24d8e82ea3c8cbe7c7122);
+            
+
+            circle_marker_2b396856a46240f9b2f2504fc6a3277b.bindPopup(popup_ccd769d3810047abbdf6e651873d16c7);
+
+            
+        
+    
+            var circle_marker_a32e2e97dfe84b2a84501d3b250ba874 = L.circleMarker(
+                [44.896777,-93.257309],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 20.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_f426456c189249a89ecf944b2136b7d7 = L.popup({maxWidth: '300'});
+
+            
+                var html_b39c406f65374ab9a33fbc981116bf82 = $('<div id="html_b39c406f65374ab9a33fbc981116bf82" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-11 P-07</h6>         Jacob Frey            341<br>Tom Hoch              260<br>Betsy Hodges          219<br>Nekima Levy-Pounds    120<br>Raymond Dehn          110</div>')[0];
+                popup_f426456c189249a89ecf944b2136b7d7.setContent(html_b39c406f65374ab9a33fbc981116bf82);
+            
+
+            circle_marker_a32e2e97dfe84b2a84501d3b250ba874.bindPopup(popup_f426456c189249a89ecf944b2136b7d7);
+
+            
+        
+    
+            var circle_marker_80133903e546460dbf1b3b48853c7d0f = L.circleMarker(
+                [44.905349,-93.23815],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_f112c3cd4f7848be9718bc55e231811c = L.popup({maxWidth: '300'});
+
+            
+                var html_5ec32efdc16a4927b63e75fca8841582 = $('<div id="html_5ec32efdc16a4927b63e75fca8841582" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-11 P-08</h6>         Jacob Frey            263<br>Tom Hoch              201<br>Betsy Hodges          171<br>Nekima Levy-Pounds    111<br>Raymond Dehn          102</div>')[0];
+                popup_f112c3cd4f7848be9718bc55e231811c.setContent(html_5ec32efdc16a4927b63e75fca8841582);
+            
+
+            circle_marker_80133903e546460dbf1b3b48853c7d0f.bindPopup(popup_f112c3cd4f7848be9718bc55e231811c);
+
+            
+        
+    
+            var circle_marker_2e46f2ca1c0a4764ac9fa77b5ce837a6 = L.circleMarker(
+                [44.901735,-93.227239],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_bdee26818c694218833d8f4ca24d8aea = L.popup({maxWidth: '300'});
+
+            
+                var html_f2329cbc85944c40a3aa751dbb71d772 = $('<div id="html_f2329cbc85944c40a3aa751dbb71d772" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-11 P-09</h6>         Jacob Frey            108<br>Tom Hoch               69<br>Betsy Hodges           65<br>Nekima Levy-Pounds     63<br>Raymond Dehn           54</div>')[0];
+                popup_bdee26818c694218833d8f4ca24d8aea.setContent(html_f2329cbc85944c40a3aa751dbb71d772);
+            
+
+            circle_marker_2e46f2ca1c0a4764ac9fa77b5ce837a6.bindPopup(popup_bdee26818c694218833d8f4ca24d8aea);
+
+            
+        
+    
+            var circle_marker_82a8e8fad1fd4537b2f865b35adf8469 = L.circleMarker(
+                [44.897037,-93.268447],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_373c7c71b92248068e36d2001448e05d = L.popup({maxWidth: '300'});
+
+            
+                var html_15b7696f42b246c1b307737c76178ba8 = $('<div id="html_15b7696f42b246c1b307737c76178ba8" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-11 P-10</h6>         Jacob Frey            217<br>Tom Hoch              183<br>Betsy Hodges          139<br>Raymond Dehn          109<br>Nekima Levy-Pounds     68</div>')[0];
+                popup_373c7c71b92248068e36d2001448e05d.setContent(html_15b7696f42b246c1b307737c76178ba8);
+            
+
+            circle_marker_82a8e8fad1fd4537b2f865b35adf8469.bindPopup(popup_373c7c71b92248068e36d2001448e05d);
+
+            
+        
+    
+            var circle_marker_dfe7f0d32106459f9ea037ae3c411c7b = L.circleMarker(
+                [44.937784,-93.222297],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_9e848fe410174800af7dbed21bebffe9 = L.popup({maxWidth: '300'});
+
+            
+                var html_1a784297a41740eebda2909d777326c9 = $('<div id="html_1a784297a41740eebda2909d777326c9" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-01</h6>         Jacob Frey            273<br>Raymond Dehn          267<br>Betsy Hodges          267<br>Nekima Levy-Pounds    221<br>Tom Hoch              200</div>')[0];
+                popup_9e848fe410174800af7dbed21bebffe9.setContent(html_1a784297a41740eebda2909d777326c9);
+            
+
+            circle_marker_dfe7f0d32106459f9ea037ae3c411c7b.bindPopup(popup_9e848fe410174800af7dbed21bebffe9);
+
+            
+        
+    
+            var circle_marker_633cadab771349c0a5170e7f4dd489a2 = L.circleMarker(
+                [44.934287,-93.210179],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_70a143444d5f4bab8dd4709fae8807a1 = L.popup({maxWidth: '300'});
+
+            
+                var html_9968e54a95084669ba3d841b8b6fc317 = $('<div id="html_9968e54a95084669ba3d841b8b6fc317" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-02</h6>         Jacob Frey            259<br>Tom Hoch              229<br>Raymond Dehn          220<br>Betsy Hodges          208<br>Nekima Levy-Pounds    174</div>')[0];
+                popup_70a143444d5f4bab8dd4709fae8807a1.setContent(html_9968e54a95084669ba3d841b8b6fc317);
+            
+
+            circle_marker_633cadab771349c0a5170e7f4dd489a2.bindPopup(popup_70a143444d5f4bab8dd4709fae8807a1);
+
+            
+        
+    
+            var circle_marker_9a4c9ed24ae0450b95f1a328ff501c2e = L.circleMarker(
+                [44.927023,-93.212705],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_895409a21adb484996121cbadfe09ee3 = L.popup({maxWidth: '300'});
+
+            
+                var html_4891caeecd5b4f6493973b091b85e3fa = $('<div id="html_4891caeecd5b4f6493973b091b85e3fa" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-03</h6>         Jacob Frey            314<br>Betsy Hodges          274<br>Tom Hoch              268<br>Nekima Levy-Pounds    208<br>Raymond Dehn          199</div>')[0];
+                popup_895409a21adb484996121cbadfe09ee3.setContent(html_4891caeecd5b4f6493973b091b85e3fa);
+            
+
+            circle_marker_9a4c9ed24ae0450b95f1a328ff501c2e.bindPopup(popup_895409a21adb484996121cbadfe09ee3);
+
+            
+        
+    
+            var circle_marker_83a4664df3854c6b8dd2ef2a6cff946e = L.circleMarker(
+                [44.920684,-93.212744],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_6c3253a04905400eab5ec31b81e6f344 = L.popup({maxWidth: '300'});
+
+            
+                var html_4aa4f5c612ae4d5f815dddaf149a8b02 = $('<div id="html_4aa4f5c612ae4d5f815dddaf149a8b02" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-04</h6>         Jacob Frey            138<br>Betsy Hodges          128<br>Nekima Levy-Pounds    124<br>Raymond Dehn          119<br>Tom Hoch              113</div>')[0];
+                popup_6c3253a04905400eab5ec31b81e6f344.setContent(html_4aa4f5c612ae4d5f815dddaf149a8b02);
+            
+
+            circle_marker_83a4664df3854c6b8dd2ef2a6cff946e.bindPopup(popup_6c3253a04905400eab5ec31b81e6f344);
+
+            
+        
+    
+            var circle_marker_a5ed6be19ace49d49e3890fff0c6dc21 = L.circleMarker(
+                [44.919672,-93.230905],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_662088fe6302421b8d1f47437a80e2d8 = L.popup({maxWidth: '300'});
+
+            
+                var html_a653a5b72e3f4130a89b58f5c793be4d = $('<div id="html_a653a5b72e3f4130a89b58f5c793be4d" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-05</h6>         Jacob Frey            241<br>Betsy Hodges          198<br>Tom Hoch              179<br>Raymond Dehn          149<br>Nekima Levy-Pounds    134</div>')[0];
+                popup_662088fe6302421b8d1f47437a80e2d8.setContent(html_a653a5b72e3f4130a89b58f5c793be4d);
+            
+
+            circle_marker_a5ed6be19ace49d49e3890fff0c6dc21.bindPopup(popup_662088fe6302421b8d1f47437a80e2d8);
+
+            
+        
+    
+            var circle_marker_5bf0b82704a54042ad8fd3566c59c9c4 = L.circleMarker(
+                [44.912641,-93.216469],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_f3df7ad857da4cde92a15349d045c9e2 = L.popup({maxWidth: '300'});
+
+            
+                var html_da76ee4faebc48b8a0ecebfcacfe53ac = $('<div id="html_da76ee4faebc48b8a0ecebfcacfe53ac" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-06</h6>         Jacob Frey            197<br>Betsy Hodges          144<br>Tom Hoch              125<br>Nekima Levy-Pounds    106<br>Raymond Dehn          105</div>')[0];
+                popup_f3df7ad857da4cde92a15349d045c9e2.setContent(html_da76ee4faebc48b8a0ecebfcacfe53ac);
+            
+
+            circle_marker_5bf0b82704a54042ad8fd3566c59c9c4.bindPopup(popup_f3df7ad857da4cde92a15349d045c9e2);
+
+            
+        
+    
+            var circle_marker_1e13aa6d559c49c8a7245097314de5c9 = L.circleMarker(
+                [44.913669,-93.205102],
+                {
+  "bubblingMouseEvents": true,
+  "color": "limegreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "limegreen",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_b906cb440a8d49609545e874d384b8b6 = L.popup({maxWidth: '300'});
+
+            
+                var html_e84f0ed4971d497ca217cb0ab66cf9d7 = $('<div id="html_e84f0ed4971d497ca217cb0ab66cf9d7" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-07</h6>         Betsy Hodges          14<br>Jacob Frey             4<br>Tom Hoch               3<br>Raymond Dehn           3<br>Nekima Levy-Pounds     1</div>')[0];
+                popup_b906cb440a8d49609545e874d384b8b6.setContent(html_e84f0ed4971d497ca217cb0ab66cf9d7);
+            
+
+            circle_marker_1e13aa6d559c49c8a7245097314de5c9.bindPopup(popup_b906cb440a8d49609545e874d384b8b6);
+
+            
+        
+    
+            var circle_marker_0fa1be7258864286815a105f37041b56 = L.circleMarker(
+                [44.932059,-93.244773],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkorange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkorange",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_c509c4802d55412eb50ad355b0556b14 = L.popup({maxWidth: '300'});
+
+            
+                var html_0a6dd1e09aae4dab931c8c25ec745729 = $('<div id="html_0a6dd1e09aae4dab931c8c25ec745729" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-08</h6>         Raymond Dehn          147<br>Nekima Levy-Pounds    125<br>Jacob Frey            118<br>Betsy Hodges           91<br>Tom Hoch               81</div>')[0];
+                popup_c509c4802d55412eb50ad355b0556b14.setContent(html_0a6dd1e09aae4dab931c8c25ec745729);
+            
+
+            circle_marker_0fa1be7258864286815a105f37041b56.bindPopup(popup_c509c4802d55412eb50ad355b0556b14);
+
+            
+        
+    
+            var circle_marker_c87a6a851f9b4141ab16162926818fdb = L.circleMarker(
+                [44.926905,-93.228356],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_07d17104a0ea491ab23a4d654995a1eb = L.popup({maxWidth: '300'});
+
+            
+                var html_a3355e1a6c344d6dac0e8c320ab1dab5 = $('<div id="html_a3355e1a6c344d6dac0e8c320ab1dab5" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-09</h6>         Jacob Frey            191<br>Betsy Hodges          155<br>Raymond Dehn          142<br>Nekima Levy-Pounds    141<br>Tom Hoch              125</div>')[0];
+                popup_07d17104a0ea491ab23a4d654995a1eb.setContent(html_a3355e1a6c344d6dac0e8c320ab1dab5);
+            
+
+            circle_marker_c87a6a851f9b4141ab16162926818fdb.bindPopup(popup_07d17104a0ea491ab23a4d654995a1eb);
+
+            
+        
+    
+            var circle_marker_9ae031d403f34c41879135963b2df1bf = L.circleMarker(
+                [44.899949,-93.215298],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 20.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_4b8e02b16631497d9b9b2e5fb88e1d3d = L.popup({maxWidth: '300'});
+
+            
+                var html_e9a7f748ca8849fabbccca344b73212e = $('<div id="html_e9a7f748ca8849fabbccca344b73212e" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-10</h6>         Jacob Frey            207<br>Tom Hoch              127<br>Betsy Hodges          123<br>Nekima Levy-Pounds    116<br>Raymond Dehn          101</div>')[0];
+                popup_4b8e02b16631497d9b9b2e5fb88e1d3d.setContent(html_e9a7f748ca8849fabbccca344b73212e);
+            
+
+            circle_marker_9ae031d403f34c41879135963b2df1bf.bindPopup(popup_4b8e02b16631497d9b9b2e5fb88e1d3d);
+
+            
+        
+    
+            var circle_marker_c2a9d04666224790a7870b093a4b6649 = L.circleMarker(
+                [44.907204,-93.212621],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_12aca3eb777045c79ede54e9138db905 = L.popup({maxWidth: '300'});
+
+            
+                var html_b678d0b2939546f39524cf513cd2d170 = $('<div id="html_b678d0b2939546f39524cf513cd2d170" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-11</h6>         Jacob Frey            169<br>Betsy Hodges          123<br>Raymond Dehn          108<br>Tom Hoch              104<br>Nekima Levy-Pounds    100</div>')[0];
+                popup_12aca3eb777045c79ede54e9138db905.setContent(html_b678d0b2939546f39524cf513cd2d170);
+            
+
+            circle_marker_c2a9d04666224790a7870b093a4b6649.bindPopup(popup_12aca3eb777045c79ede54e9138db905);
+
+            
+        
+    
+            var circle_marker_01a9ab3692364c4098a98783f0158aa6 = L.circleMarker(
+                [44.931389,-93.237257],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_6d77e78da8e0413ca20ea032d03bd94a = L.popup({maxWidth: '300'});
+
+            
+                var html_bf869930cd3348589d144cd11521732c = $('<div id="html_bf869930cd3348589d144cd11521732c" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-12</h6>         Jacob Frey            274<br>Raymond Dehn          259<br>Betsy Hodges          238<br>Nekima Levy-Pounds    210<br>Tom Hoch              193</div>')[0];
+                popup_6d77e78da8e0413ca20ea032d03bd94a.setContent(html_bf869930cd3348589d144cd11521732c);
+            
+
+            circle_marker_01a9ab3692364c4098a98783f0158aa6.bindPopup(popup_6d77e78da8e0413ca20ea032d03bd94a);
+
+            
+        
+    
+            var circle_marker_fb021979c4a64fd1ab9c7ddcf57f9e7f = L.circleMarker(
+                [44.91075,-93.227117],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_06e92336b3a0411daa181c42cae1bcbd = L.popup({maxWidth: '300'});
+
+            
+                var html_02165ee86c3d427bbdb470099210befe = $('<div id="html_02165ee86c3d427bbdb470099210befe" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-12 P-13</h6>         Jacob Frey            156<br>Tom Hoch              128<br>Betsy Hodges           97<br>Raymond Dehn           91<br>Nekima Levy-Pounds     60</div>')[0];
+                popup_06e92336b3a0411daa181c42cae1bcbd.setContent(html_02165ee86c3d427bbdb470099210befe);
+            
+
+            circle_marker_fb021979c4a64fd1ab9c7ddcf57f9e7f.bindPopup(popup_06e92336b3a0411daa181c42cae1bcbd);
+
+            
+        
+    
+            var circle_marker_2eb14161caf24c4cad05c28c035f860c = L.circleMarker(
+                [44.940096,-93.320048],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_42a9b7127fee41e79f92f59b46128b06 = L.popup({maxWidth: '300'});
+
+            
+                var html_5543111e6baf4fefb977d1d49cf12ee8 = $('<div id="html_5543111e6baf4fefb977d1d49cf12ee8" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-01</h6>         Jacob Frey            211<br>Tom Hoch              184<br>Betsy Hodges          121<br>Nekima Levy-Pounds     72<br>Raymond Dehn           70</div>')[0];
+                popup_42a9b7127fee41e79f92f59b46128b06.setContent(html_5543111e6baf4fefb977d1d49cf12ee8);
+            
+
+            circle_marker_2eb14161caf24c4cad05c28c035f860c.bindPopup(popup_42a9b7127fee41e79f92f59b46128b06);
+
+            
+        
+    
+            var circle_marker_a6335b307e55489a84241c6dc93b1e68 = L.circleMarker(
+                [44.928695,-93.313106],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_97f2429ff83c470e8d3d44dbadc30059 = L.popup({maxWidth: '300'});
+
+            
+                var html_153ce13c4451459bb1da31d8df494efb = $('<div id="html_153ce13c4451459bb1da31d8df494efb" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-02</h6>         Jacob Frey            188<br>Betsy Hodges          163<br>Tom Hoch              162<br>Raymond Dehn           56<br>Nekima Levy-Pounds     46</div>')[0];
+                popup_97f2429ff83c470e8d3d44dbadc30059.setContent(html_153ce13c4451459bb1da31d8df494efb);
+            
+
+            circle_marker_a6335b307e55489a84241c6dc93b1e68.bindPopup(popup_97f2429ff83c470e8d3d44dbadc30059);
+
+            
+        
+    
+            var circle_marker_56c8f6d75f4f4450bf196a8c89ed69d4 = L.circleMarker(
+                [44.927978,-93.323921],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 21.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_935bfbea167c45d88f6789de9f13ab5e = L.popup({maxWidth: '300'});
+
+            
+                var html_4657d61e75844b1da0360956808e89e4 = $('<div id="html_4657d61e75844b1da0360956808e89e4" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-03</h6>         Jacob Frey            295<br>Tom Hoch              209<br>Betsy Hodges          173<br>Nekima Levy-Pounds     85<br>Raymond Dehn           79</div>')[0];
+                popup_935bfbea167c45d88f6789de9f13ab5e.setContent(html_4657d61e75844b1da0360956808e89e4);
+            
+
+            circle_marker_56c8f6d75f4f4450bf196a8c89ed69d4.bindPopup(popup_935bfbea167c45d88f6789de9f13ab5e);
+
+            
+        
+    
+            var circle_marker_4df6b2f0c34a42b1baa3d7e2b3254497 = L.circleMarker(
+                [44.921526,-93.32017],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 21.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_ba1bd2307af54e61bd9937f0cdcd4fc5 = L.popup({maxWidth: '300'});
+
+            
+                var html_95d903da584d4d59bc12e47ae1115dbc = $('<div id="html_95d903da584d4d59bc12e47ae1115dbc" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-04</h6>         Jacob Frey            263<br>Betsy Hodges          179<br>Tom Hoch              173<br>Nekima Levy-Pounds     95<br>Raymond Dehn           73</div>')[0];
+                popup_ba1bd2307af54e61bd9937f0cdcd4fc5.setContent(html_95d903da584d4d59bc12e47ae1115dbc);
+            
+
+            circle_marker_4df6b2f0c34a42b1baa3d7e2b3254497.bindPopup(popup_ba1bd2307af54e61bd9937f0cdcd4fc5);
+
+            
+        
+    
+            var circle_marker_7471bee0939740a993ccdc20c12994e7 = L.circleMarker(
+                [44.916889,-93.320175],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_779324a8f6d742dcb2f7fb8965ebedf4 = L.popup({maxWidth: '300'});
+
+            
+                var html_b1c946193d5148d1bd0539e5ffa1549d = $('<div id="html_b1c946193d5148d1bd0539e5ffa1549d" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-05</h6>         Jacob Frey            289<br>Tom Hoch              220<br>Betsy Hodges          167<br>Raymond Dehn           82<br>Nekima Levy-Pounds     67</div>')[0];
+                popup_779324a8f6d742dcb2f7fb8965ebedf4.setContent(html_b1c946193d5148d1bd0539e5ffa1549d);
+            
+
+            circle_marker_7471bee0939740a993ccdc20c12994e7.bindPopup(popup_779324a8f6d742dcb2f7fb8965ebedf4);
+
+            
+        
+    
+            var circle_marker_4221954010214c49910a16037f7e4a0e = L.circleMarker(
+                [44.914142,-93.29278],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_b93a3a8a60a243efa799c4fcc9c53514 = L.popup({maxWidth: '300'});
+
+            
+                var html_c340c2c06c5942b28a611c20c9c9914f = $('<div id="html_c340c2c06c5942b28a611c20c9c9914f" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-06</h6>         Jacob Frey            394<br>Tom Hoch              377<br>Betsy Hodges          183<br>Nekima Levy-Pounds     94<br>Raymond Dehn           92</div>')[0];
+                popup_b93a3a8a60a243efa799c4fcc9c53514.setContent(html_c340c2c06c5942b28a611c20c9c9914f);
+            
+
+            circle_marker_4221954010214c49910a16037f7e4a0e.bindPopup(popup_b93a3a8a60a243efa799c4fcc9c53514);
+
+            
+        
+    
+            var circle_marker_f67e593505a5405fb0b1e9d13078922b = L.circleMarker(
+                [44.90325,-93.295895],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 32.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_f22a3ffe76cb4978afb5bf10ccdc2262 = L.popup({maxWidth: '300'});
+
+            
+                var html_9ccd883f0fce45dd9dc81789c709e988 = $('<div id="html_9ccd883f0fce45dd9dc81789c709e988" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-07</h6>         Jacob Frey            516<br>Tom Hoch              387<br>Betsy Hodges          248<br>Nekima Levy-Pounds    138<br>Raymond Dehn          120</div>')[0];
+                popup_f22a3ffe76cb4978afb5bf10ccdc2262.setContent(html_9ccd883f0fce45dd9dc81789c709e988);
+            
+
+            circle_marker_f67e593505a5405fb0b1e9d13078922b.bindPopup(popup_f22a3ffe76cb4978afb5bf10ccdc2262);
+
+            
+        
+    
+            var circle_marker_00573f0da4bc4efba4aa40e75e3ea8e4 = L.circleMarker(
+                [44.901554,-93.31027],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_435a49f7dbf94b00afab1e0f147e1f50 = L.popup({maxWidth: '300'});
+
+            
+                var html_b129fe9c46984357b5e02ebea0fc6608 = $('<div id="html_b129fe9c46984357b5e02ebea0fc6608" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-08</h6>         Jacob Frey            347<br>Tom Hoch              276<br>Betsy Hodges          163<br>Nekima Levy-Pounds    110<br>Raymond Dehn           83</div>')[0];
+                popup_435a49f7dbf94b00afab1e0f147e1f50.setContent(html_b129fe9c46984357b5e02ebea0fc6608);
+            
+
+            circle_marker_00573f0da4bc4efba4aa40e75e3ea8e4.bindPopup(popup_435a49f7dbf94b00afab1e0f147e1f50);
+
+            
+        
+    
+            var circle_marker_c6b3eb29541541119a44b88b1dca1431 = L.circleMarker(
+                [44.894317,-93.304761],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.25,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_776d2bbf03db4a2cbba40eabb6b3d1df = L.popup({maxWidth: '300'});
+
+            
+                var html_12dc781ad9c04be58cfd10805188b3c1 = $('<div id="html_12dc781ad9c04be58cfd10805188b3c1" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-09</h6>         Jacob Frey            380<br>Tom Hoch              355<br>Betsy Hodges          163<br>Nekima Levy-Pounds    127<br>Raymond Dehn          116</div>')[0];
+                popup_776d2bbf03db4a2cbba40eabb6b3d1df.setContent(html_12dc781ad9c04be58cfd10805188b3c1);
+            
+
+            circle_marker_c6b3eb29541541119a44b88b1dca1431.bindPopup(popup_776d2bbf03db4a2cbba40eabb6b3d1df);
+
+            
+        
+    
+            var circle_marker_e6b794e06c8745d18419d4f7216ccffb = L.circleMarker(
+                [44.922473,-93.296627],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.5,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_e43d73b6b0ca4ae69b3684c5b42ba9db = L.popup({maxWidth: '300'});
+
+            
+                var html_7836cabcfbd24b6680ccde8d0f3004f0 = $('<div id="html_7836cabcfbd24b6680ccde8d0f3004f0" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-10</h6>         Jacob Frey            183<br>Tom Hoch              153<br>Betsy Hodges          112<br>Raymond Dehn           69<br>Nekima Levy-Pounds     64</div>')[0];
+                popup_e43d73b6b0ca4ae69b3684c5b42ba9db.setContent(html_7836cabcfbd24b6680ccde8d0f3004f0);
+            
+
+            circle_marker_e6b794e06c8745d18419d4f7216ccffb.bindPopup(popup_e43d73b6b0ca4ae69b3684c5b42ba9db);
+
+            
+        
+    
+            var circle_marker_6b8dc0e4003f4ea894ff0977eea0c0c9 = L.circleMarker(
+                [44.910665,-93.325168],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 25.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_75b08493f38b4de0ac50dec2f087478e = L.popup({maxWidth: '300'});
+
+            
+                var html_42b9645616c7484b86476287a7691f3e = $('<div id="html_42b9645616c7484b86476287a7691f3e" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-11</h6>         Jacob Frey            343<br>Tom Hoch              240<br>Betsy Hodges          140<br>Nekima Levy-Pounds     73<br>Raymond Dehn           64</div>')[0];
+                popup_75b08493f38b4de0ac50dec2f087478e.setContent(html_42b9645616c7484b86476287a7691f3e);
+            
+
+            circle_marker_6b8dc0e4003f4ea894ff0977eea0c0c9.bindPopup(popup_75b08493f38b4de0ac50dec2f087478e);
+
+            
+        
+    
+            var circle_marker_95b3d81dad0848759f1e4d025d2f4b92 = L.circleMarker(
+                [44.908817,-93.317409],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.0,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_55ef943321124eff929fd1e5480ce68d = L.popup({maxWidth: '300'});
+
+            
+                var html_5be78a75be944aa7a5f63b3922f95af1 = $('<div id="html_5be78a75be944aa7a5f63b3922f95af1" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-12</h6>         Jacob Frey            204<br>Tom Hoch              128<br>Betsy Hodges          108<br>Nekima Levy-Pounds     85<br>Raymond Dehn           46</div>')[0];
+                popup_55ef943321124eff929fd1e5480ce68d.setContent(html_5be78a75be944aa7a5f63b3922f95af1);
+            
+
+            circle_marker_95b3d81dad0848759f1e4d025d2f4b92.bindPopup(popup_55ef943321124eff929fd1e5480ce68d);
+
+            
+        
+    
+            var circle_marker_dce8e1c19c2e413fad3b9a3aa842602a = L.circleMarker(
+                [44.91054,-93.304887],
+                {
+  "bubblingMouseEvents": true,
+  "color": "dodgerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "dodgerblue",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 14.75,
+  "stroke": true,
+  "weight": 0
+}
+                ).addTo(map_fbfd0aa5c3f44071b173d6dbfd65d1bb);
+            
+    
+            var popup_fc4d88b2711b48de90865d6123a05455 = L.popup({maxWidth: '300'});
+
+            
+                var html_1df684ee946a467ba2a859b9feeea5b8 = $('<div id="html_1df684ee946a467ba2a859b9feeea5b8" style="width: 100.0%; height: 100.0%;">         <h6>Hennepin: MINNEAPOLIS W-13 P-13</h6>         Jacob Frey            320<br>Tom Hoch              261<br>Betsy Hodges          195<br>Raymond Dehn           81<br>Nekima Levy-Pounds     68</div>')[0];
+                popup_fc4d88b2711b48de90865d6123a05455.setContent(html_1df684ee946a467ba2a859b9feeea5b8);
+            
+
+            circle_marker_dce8e1c19c2e413fad3b9a3aa842602a.bindPopup(popup_fc4d88b2711b48de90865d6123a05455);
+
+            
+        
+</script>
